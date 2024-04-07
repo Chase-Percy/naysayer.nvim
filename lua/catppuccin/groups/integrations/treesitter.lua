@@ -14,16 +14,16 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 	local colors = { -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 		-- Identifiers
-		["@variable"] = { fg = C.text, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
+		["@variable"] = { fg = C.white, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
 		["@variable.builtin"] = { fg = C.red, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
 		["@variable.parameter"] = { fg = C.maroon, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.lavender }, -- For fields.
+		["@variable.member"] = { fg = C.white }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
 		["@constant.builtin"] = { fg = C.peach, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
 		["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
 
-		["@module"] = { fg = C.lavender, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
+		["@module"] = { fg = C.white, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
 		["@label"] = { link = "Label" }, -- For labels: label: in C and :label: in Lua.
 
 		-- Literals
@@ -48,7 +48,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@type.qualifier"] = { link = "Keyword" }, -- type qualifiers (e.g. `const`)
 
 		["@attribute"] = { link = "Constant" }, -- attribute annotations (e.g. Python decorators)
-		["@property"] = { fg = C.lavender, style = O.styles.properties or {} }, -- Same as TSField.
+		["@property"] = { fg = C.white, style = O.styles.properties or {} }, -- Same as TSField.
 
 		-- Functions
 		["@function"] = { link = "Function" }, -- For function (calls and definitions).
@@ -93,10 +93,10 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@comment.todo"] = { fg = C.base, bg = C.flamingo },
 
 		-- Markup
-		["@markup"] = { fg = C.text }, -- For strings considerated text in a markup language.
+		["@markup"] = { fg = C.white }, -- For strings considerated text in a markup language.
 		["@markup.strong"] = { fg = C.maroon, style = { "bold" } }, -- bold
 		["@markup.italic"] = { fg = C.maroon, style = { "italic" } }, -- italic
-		["@markup.strikethrough"] = { fg = C.text, style = { "strikethrough" } }, -- strikethrough text
+		["@markup.strikethrough"] = { fg = C.white, style = { "strikethrough" } }, -- strikethrough text
 		["@markup.underline"] = { link = "Underlined" }, -- underlined text
 
 		["@markup.heading"] = { fg = C.blue, style = { "bold" } }, -- titles like: # Example
@@ -143,10 +143,10 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@constant.java"] = { fg = C.teal },
 
 		-- css
-		["@property.css"] = { fg = C.lavender },
+		["@property.css"] = { fg = C.white },
 		["@property.id.css"] = { fg = C.blue },
 		["@property.class.css"] = { fg = C.yellow },
-		["@type.css"] = { fg = C.lavender },
+		["@type.css"] = { fg = C.white },
 		["@type.tag.css"] = { fg = C.mauve },
 		["@string.plain.css"] = { fg = C.peach },
 		["@number.css"] = { fg = C.peach },
@@ -161,11 +161,11 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		["@constructor.lua"] = { fg = C.flamingo }, -- For constructor calls and definitions: = { } in Lua.
 
 		-- typescript
-		["@property.typescript"] = { fg = C.lavender, style = O.styles.properties or {} },
-		["@constructor.typescript"] = { fg = C.lavender },
+		["@property.typescript"] = { fg = C.white, style = O.styles.properties or {} },
+		["@constructor.typescript"] = { fg = C.white },
 
 		-- TSX (Typescript React)
-		["@constructor.tsx"] = { fg = C.lavender },
+		["@constructor.tsx"] = { fg = C.white },
 		["@tag.attribute.tsx"] = { fg = C.teal, style = O.styles.miscs or { "italic" } },
 
 		-- yaml
@@ -180,7 +180,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- C/CPP
 		["@type.builtin.c"] = { fg = C.yellow, style = {} },
-		["@property.cpp"] = { fg = C.text },
+		["@property.cpp"] = { fg = C.white },
 		["@type.builtin.cpp"] = { fg = C.yellow, style = {} },
 
 		-- gitcommit

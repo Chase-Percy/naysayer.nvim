@@ -1,8 +1,8 @@
 local darken = require("catppuccin.utils.colors").darken
-local palette = require("catppuccin.palettes").get_palette "frappe"
+local palette = require("catppuccin.palettes").get_palette "naysayer"
 
 return {
-	name = "catppuccin-frappe-cursorline",
+	name = "catppuccin-naysayer-cursorline",
 	static = {
 		winhl = {
 			inactive = {
