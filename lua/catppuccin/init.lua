@@ -5,8 +5,8 @@ if is_vim then require "catppuccin.lib.vim" end
 local M = {
 	default_options = {
 		background = {
-			light = "latte",
-			dark = "mocha",
+			light = "naysayer",
+			dark = "naysayer",
 		},
 		compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
 		transparent_background = false,
@@ -99,7 +99,7 @@ local M = {
 		color_overrides = {},
 		highlight_overrides = {},
 	},
-	flavours = { latte = 1, frappe = 2, macchiato = 3, mocha = 4, naysayer = 5 },
+	flavours = { naysayer = 1 },
 	path_sep = jit and (jit.os == "Windows" and "\\" or "/") or package.config:sub(1, 1),
 }
 
