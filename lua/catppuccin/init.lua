@@ -99,7 +99,7 @@ local M = {
 		color_overrides = {},
 		highlight_overrides = {},
 	},
-	flavours = { latte = 1, frappe = 2, macchiato = 3, mocha = 4 },
+	flavours = { latte = 1, frappe = 2, macchiato = 3, mocha = 4, naysayer = 5 },
 	path_sep = jit and (jit.os == "Windows" and "\\" or "/") or package.config:sub(1, 1),
 }
 
