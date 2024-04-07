@@ -214,43 +214,6 @@ require("catppuccin").setup({
 })
 ```
 
-# FAQ
-
-## Wrong treesitter highlights
-
-Please disable `additional_vim_regex_highlighting`
-
-```lua
-require("nvim-treesitter.configs").setup {
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false
-    },
-}
-```
-
-## Colors doesn't match preview screenshots
-
-Catppuccin requires true color support AKA terminals support the full range of 16 million colors
-
-- Supported: iterm2 (macOS), kitty, wezterm, alacritty, tmux, ...
-
-Full list of support terminals can be found here: <https://github.com/termstandard/colors#truecolor-support-in-output-devices>
-
-- Unsupported terminal: Terminal.app (macOS), Terminus, Terminology, ...
-
-Full list of Unsupported terminals can be found here: <https://github.com/termstandard/colors#not-supporting-truecolor>
-
-### For tmux users
-
-- [Enable true color support](https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6) to fix the following [abnormal colors](https://github.com/catppuccin/nvim/issues/415):
-
-![image](https://user-images.githubusercontent.com/1941785/220280749-c3ab52fb-9b8a-4f04-ab98-f8c1bb41f84b.png)
-
-- [Enable italic font support](https://gist.github.com/gyribeiro/4192af1aced7a1b555df06bd3781a722) to fix the following [incorrect if, then, else, end highlights](https://github.com/catppuccin/nvim/issues/428):
-
-![image](https://user-images.githubusercontent.com/13246770/224011118-dcf0f567-650a-4eb2-8be6-0af5cf435501.png)
-
 # Acknowledgments
 
 - This repo began as a fork from [Catpuccin](https://github.com/catppuccin/nvim?tab=readme-ov-file#Compile).
