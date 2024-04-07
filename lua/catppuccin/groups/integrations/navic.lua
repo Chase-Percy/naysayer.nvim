@@ -2,7 +2,7 @@ local M = {}
 
 function M.get()
 	local background = O.integrations.navic.custom_bg and O.integrations.navic.custom_bg or C.none
-	if O.integrations.navic.custom_bg == "lualine" then background = C.mantle end
+	if O.integrations.navic.custom_bg == "lualine" then background = C.darkest_green end
 
 	return {
 		NavicIconsFile = { fg = C.blue, bg = background },
@@ -17,22 +17,22 @@ function M.get()
 		NavicIconsEnum = { fg = C.green, bg = background },
 		NavicIconsInterface = { fg = C.yellow, bg = background },
 		NavicIconsFunction = { fg = C.blue, bg = background },
-		NavicIconsVariable = { fg = C.flamingo, bg = background },
-		NavicIconsConstant = { fg = C.peach, bg = background },
+		NavicIconsVariable = { fg = C.monokai_yellow, bg = background },
+		NavicIconsConstant = { fg = C.monokai_orange, bg = background },
 		NavicIconsString = { fg = C.green, style = O.styles.strings, bg = background },
-		NavicIconsNumber = { fg = C.peach, bg = background },
-		NavicIconsBoolean = { fg = C.peach, bg = background },
-		NavicIconsArray = { fg = C.peach, bg = background },
-		NavicIconsObject = { fg = C.peach, bg = background },
-		NavicIconsKey = { fg = C.pink, style = O.styles.keywords, bg = background },
-		NavicIconsNull = { fg = C.peach, bg = background },
+		NavicIconsNumber = { fg = C.monokai_orange, bg = background },
+		NavicIconsBoolean = { fg = C.monokai_orange, bg = background },
+		NavicIconsArray = { fg = C.monokai_orange, bg = background },
+		NavicIconsObject = { fg = C.monokai_orange, bg = background },
+		NavicIconsKey = { fg = C.monokai_magenta, style = O.styles.keywords, bg = background },
+		NavicIconsNull = { fg = C.monokai_orange, bg = background },
 		NavicIconsEnumMember = { fg = C.red, bg = background },
 		NavicIconsStruct = { fg = C.blue, bg = background },
 		NavicIconsEvent = { fg = C.blue, bg = background },
-		NavicIconsOperator = { fg = C.sky, bg = background },
+		NavicIconsOperator = { fg = C.monokai_blue, bg = background },
 		NavicIconsTypeParameter = { fg = C.blue, bg = background },
-		NavicText = { fg = C.sapphire, bg = background },
-		NavicSeparator = { fg = C.text, bg = background },
+		NavicText = { fg = C.blue, bg = background },
+		NavicSeparator = { fg = C.brown, bg = background },
 	}
 end
 

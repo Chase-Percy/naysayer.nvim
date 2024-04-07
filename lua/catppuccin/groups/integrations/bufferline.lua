@@ -12,47 +12,47 @@ function M.get(user_config)
 		local bg_highlight = (transparent_background and O.dim_inactive.enabled and C.dim)
 			or (transparent_background and "NONE")
 			or (O.dim_inactive.enabled and C.dim)
-			or C.crust
+			or C.darkest_green
 
-		local active_bg = transparent_background and "NONE" or C.base
-		local inactive_bg = transparent_background and "NONE" or C.mantle
+		local active_bg = transparent_background and "NONE" or C.darkest_green
+		local inactive_bg = transparent_background and "NONE" or C.darkest_green
 
-		local separator_fg = O.transparent_background and C.surface1 or C.crust
+		local separator_fg = O.transparent_background and C.dark_green or C.darkest_green
 
 		local styles = user_config.styles or { "bold", "italic" }
 
 		local highlights = {
 			-- buffers
 			background = { bg = inactive_bg },
-			buffer_visible = { fg = C.surface1, bg = inactive_bg },
-			buffer_selected = { fg = C.text, bg = active_bg, style = styles }, -- current
+			buffer_visible = { fg = C.dark_green, bg = inactive_bg },
+			buffer_selected = { fg = C.brown, bg = active_bg, style = styles }, -- current
 			-- Duplicate
-			duplicate_selected = { fg = C.text, bg = active_bg, style = styles },
-			duplicate_visible = { fg = C.surface1, bg = inactive_bg, style = styles },
-			duplicate = { fg = C.surface1, bg = inactive_bg, style = styles },
+			duplicate_selected = { fg = C.brown, bg = active_bg, style = styles },
+			duplicate_visible = { fg = C.dark_green, bg = inactive_bg, style = styles },
+			duplicate = { fg = C.dark_green, bg = inactive_bg, style = styles },
 			-- tabs
-			tab = { fg = C.surface1, bg = inactive_bg },
-			tab_selected = { fg = C.sky, bg = active_bg, bold = true },
+			tab = { fg = C.dark_green, bg = inactive_bg },
+			tab_selected = { fg = C.monokai_blue, bg = active_bg, bold = true },
 			tab_separator = { fg = separator_fg, bg = inactive_bg },
 			tab_separator_selected = { fg = separator_fg, bg = active_bg },
 
 			tab_close = { fg = C.red, bg = inactive_bg },
-			indicator_selected = { fg = C.peach, bg = active_bg, style = styles },
+			indicator_selected = { fg = C.monokai_orange, bg = active_bg, style = styles },
 			-- separators
 			separator = { fg = separator_fg, bg = inactive_bg },
 			separator_visible = { fg = separator_fg, bg = inactive_bg },
 			separator_selected = { fg = separator_fg, bg = active_bg },
 			offset_separator = { fg = separator_fg, bg = active_bg },
 			-- close buttons
-			close_button = { fg = C.surface1, bg = inactive_bg },
-			close_button_visible = { fg = C.surface1, bg = inactive_bg },
+			close_button = { fg = C.dark_green, bg = inactive_bg },
+			close_button_visible = { fg = C.dark_green, bg = inactive_bg },
 			close_button_selected = { fg = C.red, bg = active_bg },
 			-- Empty fill
 			fill = { bg = bg_highlight },
 			-- Numbers
-			numbers = { fg = C.subtext0, bg = inactive_bg },
-			numbers_visible = { fg = C.subtext0, bg = inactive_bg },
-			numbers_selected = { fg = C.subtext0, bg = active_bg, style = styles },
+			numbers = { fg = C.brown, bg = inactive_bg },
+			numbers_visible = { fg = C.brown, bg = inactive_bg },
+			numbers_selected = { fg = C.brown, bg = active_bg, style = styles },
 			-- Errors
 			error = { fg = C.red, bg = inactive_bg },
 			error_visible = { fg = C.red, bg = inactive_bg },
@@ -68,26 +68,26 @@ function M.get(user_config)
 			warning_diagnostic_visible = { fg = C.yellow, bg = inactive_bg },
 			warning_diagnostic_selected = { fg = C.yellow, bg = active_bg },
 			-- Infos
-			info = { fg = C.sky, bg = inactive_bg },
-			info_visible = { fg = C.sky, bg = inactive_bg },
-			info_selected = { fg = C.sky, bg = active_bg, style = styles },
-			info_diagnostic = { fg = C.sky, bg = inactive_bg },
-			info_diagnostic_visible = { fg = C.sky, bg = inactive_bg },
-			info_diagnostic_selected = { fg = C.sky, bg = active_bg },
+			info = { fg = C.monokai_blue, bg = inactive_bg },
+			info_visible = { fg = C.monokai_blue, bg = inactive_bg },
+			info_selected = { fg = C.monokai_blue, bg = active_bg, style = styles },
+			info_diagnostic = { fg = C.monokai_blue, bg = inactive_bg },
+			info_diagnostic_visible = { fg = C.monokai_blue, bg = inactive_bg },
+			info_diagnostic_selected = { fg = C.monokai_blue, bg = active_bg },
 			-- Hint
-			hint = { fg = C.teal, bg = inactive_bg },
-			hint_visible = { fg = C.teal, bg = inactive_bg },
-			hint_selected = { fg = C.teal, bg = active_bg, style = styles },
-			hint_diagnostic = { fg = C.teal, bg = inactive_bg },
-			hint_diagnostic_visible = { fg = C.teal, bg = inactive_bg },
-			hint_diagnostic_selected = { fg = C.teal, bg = active_bg },
+			hint = { fg = C.monokai_cyan, bg = inactive_bg },
+			hint_visible = { fg = C.monokai_cyan, bg = inactive_bg },
+			hint_selected = { fg = C.monokai_cyan, bg = active_bg, style = styles },
+			hint_diagnostic = { fg = C.monokai_cyan, bg = inactive_bg },
+			hint_diagnostic_visible = { fg = C.monokai_cyan, bg = inactive_bg },
+			hint_diagnostic_selected = { fg = C.monokai_cyan, bg = active_bg },
 			-- Diagnostics
-			diagnostic = { fg = C.subtext0, bg = inactive_bg },
-			diagnostic_visible = { fg = C.subtext0, bg = inactive_bg },
-			diagnostic_selected = { fg = C.subtext0, bg = active_bg, style = styles },
+			diagnostic = { fg = C.brown, bg = inactive_bg },
+			diagnostic_visible = { fg = C.brown, bg = inactive_bg },
+			diagnostic_selected = { fg = C.brown, bg = active_bg, style = styles },
 			-- Modified
-			modified = { fg = C.peach, bg = inactive_bg },
-			modified_selected = { fg = C.peach, bg = active_bg },
+			modified = { fg = C.monokai_orange, bg = inactive_bg },
+			modified_selected = { fg = C.monokai_orange, bg = active_bg },
 		}
 
 		local user_highlights = user_config.custom or {}

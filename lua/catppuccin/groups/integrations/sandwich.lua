@@ -2,10 +2,10 @@ local M = {}
 
 function M.get()
 	return {
-		OperatorSandwichAdd = { bg = C.blue, fg = C.base },
-		OperatorSandwichBuns = { bg = C.blue, fg = C.base },
-		OperatorSandwichChange = { bg = C.blue, fg = C.base },
-		OperatorSandwichDelete = { bg = C.blue, fg = C.base },
+		OperatorSandwichAdd = { bg = C.blue, fg = C.darkest_green },
+		OperatorSandwichBuns = { bg = C.blue, fg = C.darkest_green },
+		OperatorSandwichChange = { bg = C.blue, fg = C.darkest_green },
+		OperatorSandwichDelete = { bg = C.blue, fg = C.darkest_green },
 	}
 end
 

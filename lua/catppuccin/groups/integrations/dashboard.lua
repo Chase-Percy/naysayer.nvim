@@ -2,16 +2,16 @@ local M = {}
 
 function M.get()
 	return {
-		DashboardShortCut = { fg = C.pink },
+		DashboardShortCut = { fg = C.monokai_magenta },
 		DashboardHeader = { fg = C.blue },
 		DashboardCenter = { fg = C.green },
 		DashboardFooter = { fg = C.yellow, style = { "italic" } },
-		DashboardMruTitle = { fg = C.sky },
-		DashboardProjectTitle = { fg = C.sky },
-		DashboardFiles = { fg = C.lavender },
-		DashboardKey = { fg = C.peach },
+		DashboardMruTitle = { fg = C.monokai_blue },
+		DashboardProjectTitle = { fg = C.monokai_blue },
+		DashboardFiles = { fg = C.grey },
+		DashboardKey = { fg = C.monokai_orange },
 		DashboardDesc = { fg = C.blue },
-		DashboardIcon = { fg = C.pink, bold = true },
+		DashboardIcon = { fg = C.monokai_magenta, bold = true },
 	}
 end
 

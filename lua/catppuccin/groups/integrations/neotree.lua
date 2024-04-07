@@ -1,45 +1,45 @@
 local M = {}
 
 function M.get()
-	local active_bg = O.transparent_background and C.none or C.mantle
-	local inactive_bg = O.transparent_background and C.none or C.base
+	local active_bg = O.transparent_background and C.none or C.darkest_green
+	local inactive_bg = O.transparent_background and C.none or C.darkest_green
 	return {
 		NeoTreeDirectoryName = { fg = C.blue },
 		NeoTreeDirectoryIcon = { fg = C.blue },
-		NeoTreeNormal = { fg = C.text, bg = active_bg },
-		NeoTreeNormalNC = { fg = C.text, bg = active_bg },
-		NeoTreeExpander = { fg = C.overlay0 },
-		NeoTreeIndentMarker = { fg = C.overlay0 },
+		NeoTreeNormal = { fg = C.brown, bg = active_bg },
+		NeoTreeNormalNC = { fg = C.brown, bg = active_bg },
+		NeoTreeExpander = { fg = C.tiffany },
+		NeoTreeIndentMarker = { fg = C.tiffany },
 		NeoTreeRootName = { fg = C.blue, style = { "bold" } },
-		NeoTreeSymbolicLinkTarget = { fg = C.pink },
-		NeoTreeModified = { fg = C.peach },
+		NeoTreeSymbolicLinkTarget = { fg = C.monokai_magenta },
+		NeoTreeModified = { fg = C.monokai_orange },
 
 		NeoTreeGitAdded = { fg = C.green },
 		NeoTreeGitConflict = { fg = C.red },
 		NeoTreeGitDeleted = { fg = C.red },
-		NeoTreeGitIgnored = { fg = C.overlay0 },
+		NeoTreeGitIgnored = { fg = C.tiffany },
 		NeoTreeGitModified = { fg = C.yellow },
 		NeoTreeGitUnstaged = { fg = C.red },
-		NeoTreeGitUntracked = { fg = C.mauve },
+		NeoTreeGitUntracked = { fg = C.monokai_violet },
 		NeoTreeGitStaged = { fg = C.green },
 
 		NeoTreeFloatBorder = { link = "FloatBorder" },
 		NeoTreeFloatTitle = { link = "FloatTitle" },
-		NeoTreeTitleBar = { fg = C.mantle, bg = C.blue },
+		NeoTreeTitleBar = { fg = C.darkest_green, bg = C.blue },
 
-		NeoTreeFileNameOpened = { fg = C.pink },
-		NeoTreeDimText = { fg = C.overlay1 },
+		NeoTreeFileNameOpened = { fg = C.monokai_magenta },
+		NeoTreeDimText = { fg = C.light_green },
 		NeoTreeFilterTerm = { fg = C.green, style = { "bold" } },
-		NeoTreeTabActive = { bg = active_bg, fg = C.lavender, style = { "bold" } },
-		NeoTreeTabInactive = { bg = inactive_bg, fg = C.overlay0 },
+		NeoTreeTabActive = { bg = active_bg, fg = C.grey, style = { "bold" } },
+		NeoTreeTabInactive = { bg = inactive_bg, fg = C.tiffany },
 		NeoTreeTabSeparatorActive = { fg = active_bg, bg = active_bg },
 		NeoTreeTabSeparatorInactive = { fg = inactive_bg, bg = inactive_bg },
-		NeoTreeVertSplit = { fg = C.base, bg = inactive_bg },
+		NeoTreeVertSplit = { fg = C.darkest_green, bg = inactive_bg },
 		NeoTreeWinSeparator = {
-			fg = O.transparent_background and C.surface1 or C.base,
-			bg = O.transparent_background and C.none or C.base,
+			fg = O.transparent_background and C.dark_green or C.darkest_green,
+			bg = O.transparent_background and C.none or C.darkest_green,
 		},
-		NeoTreeStatusLineNC = { fg = C.mantle, bg = C.mantle },
+		NeoTreeStatusLineNC = { fg = C.darkest_green, bg = C.darkest_green },
 	}
 end
 

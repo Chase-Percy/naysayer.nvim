@@ -11,11 +11,11 @@ function M.get()
 			GitSignsChange = { fg = C.yellow }, -- diff mode: Changed line |diff.txt|
 			GitSignsDelete = { fg = C.red }, -- diff mode: Deleted line |diff.txt|
 
-			GitSignsCurrentLineBlame = { fg = C.surface1 },
+			GitSignsCurrentLineBlame = { fg = C.dark_green },
 
-			GitSignsAddPreview = O.transparent_background and { fg = U.darken(C.green, 0.72, C.base), bg = C.none }
+			GitSignsAddPreview = O.transparent_background and { fg = U.darken(C.green, 0.72, C.darkest_green), bg = C.none }
 				or { link = "DiffAdd" },
-			GitSignsDeletePreview = O.transparent_background and { fg = U.darken(C.red, 0.72, C.base), bg = C.none }
+			GitSignsDeletePreview = O.transparent_background and { fg = U.darken(C.red, 0.72, C.darkest_green), bg = C.none }
 				or { link = "DiffDelete" },
 			-- for word diff in previews
 			GitSignsAddInline = O.transparent_background and {
@@ -42,7 +42,7 @@ function M.get()
 			GitSignsChange = { fg = C.yellow }, -- diff mode: Changed line |diff.txt|
 			GitSignsDelete = { fg = C.red }, -- diff mode: Deleted line |diff.txt|
 
-			GitSignsCurrentLineBlame = { fg = C.surface1 },
+			GitSignsCurrentLineBlame = { fg = C.dark_green },
 
 			GitSignsAddPreview = O.transparent_background and { fg = C.green, bg = C.none } or { link = "DiffAdd" },
 			GitSignsDeletePreview = O.transparent_background and { fg = C.red, bg = C.none } or { link = "DiffDelete" },

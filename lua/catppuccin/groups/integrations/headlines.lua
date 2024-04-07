@@ -2,16 +2,16 @@ local M = {}
 
 function M.get()
 	return {
-		Dash = { fg = C.overlay2, style = { "bold" } },
+		Dash = { fg = C.green, style = { "bold" } },
 		Quote = { link = "@text.strong" },
-		CodeBlock = { bg = C.mantle },
+		CodeBlock = { bg = C.darkest_green },
 		Headline = { link = "Headline1" },
-		Headline1 = { bg = C.surface0, fg = C.red },
-		Headline2 = { bg = C.surface0, fg = C.peach },
-		Headline3 = { bg = C.surface0, fg = C.yellow },
-		Headline4 = { bg = C.surface0, fg = C.green },
-		Headline5 = { bg = C.surface0, fg = C.sapphire },
-		Headline6 = { bg = C.surface0, fg = C.lavender },
+		Headline1 = { bg = C.darker_green, fg = C.red },
+		Headline2 = { bg = C.darker_green, fg = C.monokai_orange },
+		Headline3 = { bg = C.darker_green, fg = C.yellow },
+		Headline4 = { bg = C.darker_green, fg = C.green },
+		Headline5 = { bg = C.darker_green, fg = C.blue },
+		Headline6 = { bg = C.darker_green, fg = C.grey },
 	}
 end
 

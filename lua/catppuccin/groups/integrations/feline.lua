@@ -25,43 +25,37 @@ local assets = {
 }
 
 local sett = {
-	text = C.mantle,
-	bkg = C.crust,
-	diffs = C.mauve,
-	extras = C.overlay1,
-	curr_file = C.maroon,
-	curr_dir = C.flamingo,
+	text = C.darkest_green,
+	bkg = C.darkest_green,
+	diffs = C.monokai_violet,
+	extras = C.light_green,
+	curr_file = C.monokai_magenta,
+	curr_dir = C.monokai_yellow,
 	show_modified = false,
 }
-
-if require("catppuccin").flavour == "latte" then
-	local latte = require("catppuccin.palettes").get_palette "latte"
-	sett.text = latte.base
-	sett.bkg = latte.crust
-end
 
 if require("catppuccin").options.transparent_background then sett.bkg = "NONE" end
 
 local mode_colors = {
-	["n"] = { "NORMAL", C.lavender },
-	["no"] = { "N-PENDING", C.lavender },
+	["n"] = { "NORMAL", C.grey },
+	["no"] = { "N-PENDING", C.grey },
 	["i"] = { "INSERT", C.green },
 	["ic"] = { "INSERT", C.green },
 	["t"] = { "TERMINAL", C.green },
-	["v"] = { "VISUAL", C.flamingo },
-	["V"] = { "V-LINE", C.flamingo },
-	[""] = { "V-BLOCK", C.flamingo },
-	["R"] = { "REPLACE", C.maroon },
-	["Rv"] = { "V-REPLACE", C.maroon },
-	["s"] = { "SELECT", C.maroon },
-	["S"] = { "S-LINE", C.maroon },
-	[""] = { "S-BLOCK", C.maroon },
-	["c"] = { "COMMAND", C.peach },
-	["cv"] = { "COMMAND", C.peach },
-	["ce"] = { "COMMAND", C.peach },
-	["r"] = { "PROMPT", C.teal },
-	["rm"] = { "MORE", C.teal },
-	["r?"] = { "CONFIRM", C.mauve },
+	["v"] = { "VISUAL", C.monokai_yellow },
+	["V"] = { "V-LINE", C.monokai_yellow },
+	[""] = { "V-BLOCK", C.monokai_yellow },
+	["R"] = { "REPLACE", C.monokai_magenta },
+	["Rv"] = { "V-REPLACE", C.monokai_magenta },
+	["s"] = { "SELECT", C.monokai_magenta },
+	["S"] = { "S-LINE", C.monokai_magenta },
+	[""] = { "S-BLOCK", C.monokai_magenta },
+	["c"] = { "COMMAND", C.monokai_orange },
+	["cv"] = { "COMMAND", C.monokai_orange },
+	["ce"] = { "COMMAND", C.monokai_orange },
+	["r"] = { "PROMPT", C.monokai_cyan },
+	["rm"] = { "MORE", C.monokai_cyan },
+	["r?"] = { "CONFIRM", C.monokai_violet },
 	["!"] = { "SHELL", C.green },
 }
 
@@ -347,7 +341,7 @@ function M.get()
 		end,
 		enabled = is_enabled(80) and view.lsp.progress == true,
 		hl = {
-			fg = C.rosewater,
+			fg = C.monokai_yellow,
 			bg = sett.bkg,
 		},
 	}
@@ -378,7 +372,7 @@ function M.get()
 		provider = "diagnostic_info",
 		enabled = function() return lsp.diagnostics_exist(vim.diagnostic.severity.INFO) end,
 		hl = {
-			fg = C.sky,
+			fg = C.monokai_blue,
 			bg = sett.bkg,
 		},
 		icon = " " .. assets.lsp.info .. " ",
@@ -388,7 +382,7 @@ function M.get()
 		provider = "diagnostic_hints",
 		enabled = function() return lsp.diagnostics_exist(vim.diagnostic.severity.HINT) end,
 		hl = {
-			fg = C.rosewater,
+			fg = C.monokai_yellow,
 			bg = sett.bkg,
 		},
 		icon = " " .. assets.lsp.hint .. " ",
@@ -490,8 +484,8 @@ function M.get()
 	components.inactive[1][1] = {
 		provider = function() return " " .. string.upper(vim.bo.ft) .. " " end,
 		hl = {
-			fg = C.overlay2,
-			bg = C.mantle,
+			fg = C.green,
+			bg = C.darkest_green,
 		},
 	}
 

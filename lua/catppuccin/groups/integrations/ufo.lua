@@ -2,8 +2,8 @@ local M = {}
 
 M.get = function()
 	return {
-		UfoFoldedFg = { fg = C.lavender },
-		UfoFoldedEllipsis = { fg = C.crust, bg = C.blue },
+		UfoFoldedFg = { fg = C.grey },
+		UfoFoldedEllipsis = { fg = C.darkest_green, bg = C.blue },
 	}
 end
 

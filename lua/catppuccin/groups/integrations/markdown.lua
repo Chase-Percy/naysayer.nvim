@@ -2,9 +2,9 @@ local M = {}
 
 function M.get()
 	return {
-		markdownHeadingDelimiter = { fg = C.peach, style = { "bold" } },
-		markdownCode = { fg = C.flamingo },
-		markdownCodeBlock = { fg = C.flamingo },
+		markdownHeadingDelimiter = { fg = C.monokai_orange, style = { "bold" } },
+		markdownCode = { fg = C.monokai_yellow },
+		markdownCodeBlock = { fg = C.monokai_yellow },
 		markdownLinkText = { fg = C.blue, style = { "underline" } },
 		markdownH1 = { link = "rainbow1" },
 		markdownH2 = { link = "rainbow2" },

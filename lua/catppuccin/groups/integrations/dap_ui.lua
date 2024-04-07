@@ -2,26 +2,26 @@ local M = {}
 
 function M.get()
 	return {
-		DapUIScope = { fg = C.sky },
-		DapUIType = { fg = C.mauve },
-		DapUIValue = { fg = C.sky },
-		DapUIVariable = { fg = C.text },
-		DapUIModifiedValue = { fg = C.peach },
-		DapUIDecoration = { fg = C.sky },
+		DapUIScope = { fg = C.monokai_blue },
+		DapUIType = { fg = C.monokai_violet },
+		DapUIValue = { fg = C.monokai_blue },
+		DapUIVariable = { fg = C.brown },
+		DapUIModifiedValue = { fg = C.monokai_orange },
+		DapUIDecoration = { fg = C.monokai_blue },
 		DapUIThread = { fg = C.green },
-		DapUIStoppedThread = { fg = C.sky },
-		DapUISource = { fg = C.lavender },
-		DapUILineNumber = { fg = C.sky },
-		DapUIFloatBorder = { fg = C.sky },
+		DapUIStoppedThread = { fg = C.monokai_blue },
+		DapUISource = { fg = C.grey },
+		DapUILineNumber = { fg = C.monokai_blue },
+		DapUIFloatBorder = { fg = C.monokai_blue },
 
-		DapUIWatchesEmpty = { fg = C.maroon },
+		DapUIWatchesEmpty = { fg = C.monokai_magenta },
 		DapUIWatchesValue = { fg = C.green },
-		DapUIWatchesError = { fg = C.maroon },
+		DapUIWatchesError = { fg = C.monokai_magenta },
 
-		DapUIBreakpointsPath = { fg = C.sky },
+		DapUIBreakpointsPath = { fg = C.monokai_blue },
 		DapUIBreakpointsInfo = { fg = C.green },
 		DapUIBreakpointsCurrentLine = { fg = C.green, style = { "bold" } },
-		DapUIBreakpointsDisabledLine = { fg = C.surface2 },
+		DapUIBreakpointsDisabledLine = { fg = C.mint },
 
 		DapUIStepOver = { fg = C.blue },
 		DapUIStepInto = { fg = C.blue },
@@ -30,9 +30,9 @@ function M.get()
 		DapUIStop = { fg = C.red },
 		DapUIPlayPause = { fg = C.green },
 		DapUIRestart = { fg = C.green },
-		DapUIUnavailable = { fg = C.surface1 },
+		DapUIUnavailable = { fg = C.dark_green },
 
-		DapUIWinSelect = { fg = C.peach },
+		DapUIWinSelect = { fg = C.monokai_orange },
 	}
 end
 

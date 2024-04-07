@@ -5,12 +5,12 @@ function M.get()
 		TreesitterContextBottom = { sp = C.dim, style = { "underline" } },
 	} or {
 		TreesitterContextBottom = {
-			sp = C.surface0,
+			sp = C.darker_green,
 			style = { "underline" },
 		},
 		TreesitterContextLineNumber = {
-			fg = C.surface1,
-			bg = C.mantle,
+			fg = C.dark_green,
+			bg = C.darkest_green,
 		},
 	}
 end

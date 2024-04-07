@@ -4,7 +4,7 @@ function M.get()
 	return {
 		LightspeedLabel = { fg = C.red, style = { "bold", "underline" } },
 		LightspeedLabelDistant = {
-			fg = U.vary_color({ latte = C.blue }, C.sky),
+			fg = U.vary_color({ latte = C.blue }, C.monokai_blue),
 			style = { "bold", "underline" },
 		},
 		LightspeedShortcut = {
@@ -13,9 +13,9 @@ function M.get()
 			style = { "bold" },
 		},
 		LightspeedMaskedChar = {
-			fg = U.vary_color({ latte = U.lighten(C.pink, 0.7, C.text) }, U.darken(C.pink, 0.7, C.base)),
+			fg = U.vary_color({ latte = U.lighten(C.monokai_magenta, 0.7, C.brown) }, U.darken(C.monokai_magenta, 0.7, C.darkest_green)),
 		},
-		LightspeedUnlabeledMatch = { fg = C.text, style = { "bold" } },
+		LightspeedUnlabeledMatch = { fg = C.brown, style = { "bold" } },
 		LightspeedGreyWash = { link = "Comment" },
 		LightspeedUniqueChar = { link = "LightspeedUnlabeledMatch" },
 		LightspeedOneCharMatch = { link = "LightspeedShortcut" },

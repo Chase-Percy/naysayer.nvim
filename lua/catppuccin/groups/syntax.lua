@@ -49,7 +49,7 @@ function M.get()
 		htmlH1 = { fg = C.white, style = { "bold" } },
 		htmlH2 = { fg = C.white, style = { "bold" } },
 		-- mkdHeading = { fg = C.monokai_orange, style = { "bold" } },
-		-- mkdCode = { bg = C.terminal_black, fg = C.text },
+		-- mkdCode = { bg = C.terminal_black, fg = C.brown },
 		mkdCodeDelimiter = { bg = C.darkest_green, fg = C.brown },
 		mkdCodeStart = { fg = C.monokai_magenta, style = { "bold" } },
 		mkdCodeEnd = { fg = C.monokai_magenta, style = { "bold" } },

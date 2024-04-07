@@ -4,21 +4,20 @@ local virtual_text = O.integrations.native_lsp.virtual_text
 
 function M.get()
 	return { -- Personally the default integration is already pretty good
-		NoiceCmdline = { fg = C.text },
-		NoiceCmdlineIcon = { fg = C.sky, style = virtual_text.information },
+		NoiceCmdline = { fg = C.brown },
+		NoiceCmdlineIcon = { fg = C.monokai_blue, style = virtual_text.information },
 		NoiceCmdlineIconSearch = { fg = C.yellow },
-		NoiceCmdlinePopupBorder = { fg = C.lavender },
+		NoiceCmdlinePopupBorder = { fg = C.grey },
 		NoiceCmdlinePopupBorderSearch = { fg = C.yellow },
 		NoiceConfirmBorder = { fg = C.blue },
-		NoiceMini = { fg = C.subtext0, blend = 0 },
-		NoiceFormatProgressDone = {
-			bg = O.transparent_background and C.none or U.darken(C.sky, 0.30, C.base),
-			fg = C.subtext0,
+		NoiceMini = { fg = C.brown, blend = 0 }, NoiceFormatProgressDone = {
+			bg = O.transparent_background and C.none or U.darken(C.monokai_blue, 0.30, C.darkest_green),
+			fg = C.brown,
 		},
 		NoiceFormatProgressTodo = {
 			bg = O.transparent_background and C.none
-				or U.vary_color({ latte = U.lighten(C.mantle, 0.70, C.base) }, U.darken(C.surface0, 0.64, C.base)),
-			fg = C.subtext0,
+				or U.vary_color({ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) }, U.darken(C.darker_green, 0.64, C.darkest_green)),
+			fg = C.brown,
 		},
 	}
 end

@@ -3,7 +3,7 @@ local M = {}
 function M.get()
 	return {
 		AerialLine = { fg = C.yellow, bg = C.none },
-		AerialGuide = { fg = C.overlay2 },
+		AerialGuide = { fg = C.green },
 		AerialBooleanIcon = { link = "@boolean" },
 		AerialClassIcon = { link = "@type" },
 		AerialConstantIcon = { link = "@constant" },

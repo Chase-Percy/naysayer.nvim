@@ -4,9 +4,9 @@ function M.get()
 	return {
 		DapBreakpoint = { fg = C.red },
 		DapBreakpointCondition = { fg = C.yellow },
-		DapBreakpointRejected = { fg = C.mauve },
-		DapLogPoint = { fg = C.sky },
-		DapStopped = { fg = C.maroon },
+		DapBreakpointRejected = { fg = C.monokai_violet },
+		DapLogPoint = { fg = C.monokai_blue },
+		DapStopped = { fg = C.monokai_magenta },
 	}
 end
 

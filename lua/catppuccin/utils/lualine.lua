@@ -3,43 +3,43 @@ return function(flavour)
 	local O = require("catppuccin").options
 	local catppuccin = {}
 
-	local transparent_bg = O.transparent_background and "NONE" or C.mantle
+	local transparent_bg = O.transparent_background and "NONE" or C.darkest_green
 
 	catppuccin.normal = {
-		a = { bg = C.blue, fg = C.mantle, gui = "bold" },
-		b = { bg = C.surface0, fg = C.blue },
-		c = { bg = transparent_bg, fg = C.text },
+		a = { bg = C.blue, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.blue },
+		c = { bg = transparent_bg, fg = C.brown },
 	}
 
 	catppuccin.insert = {
-		a = { bg = C.green, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.green },
+		a = { bg = C.green, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.green },
 	}
 
 	catppuccin.terminal = {
-		a = { bg = C.green, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.green },
+		a = { bg = C.green, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.green },
 	}
 
 	catppuccin.command = {
-		a = { bg = C.peach, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.peach },
+		a = { bg = C.monokai_orange, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.monokai_orange },
 	}
 
 	catppuccin.visual = {
-		a = { bg = C.mauve, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.mauve },
+		a = { bg = C.monokai_violet, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.monokai_violet },
 	}
 
 	catppuccin.replace = {
-		a = { bg = C.red, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.red },
+		a = { bg = C.red, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.red },
 	}
 
 	catppuccin.inactive = {
 		a = { bg = transparent_bg, fg = C.blue },
-		b = { bg = transparent_bg, fg = C.surface1, gui = "bold" },
-		c = { bg = transparent_bg, fg = C.overlay0 },
+		b = { bg = transparent_bg, fg = C.dark_green, gui = "bold" },
+		c = { bg = transparent_bg, fg = C.tiffany },
 	}
 
 	return catppuccin

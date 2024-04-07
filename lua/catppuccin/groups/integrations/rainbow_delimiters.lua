@@ -5,10 +5,10 @@ function M.get()
 		RainbowDelimiterRed = { fg = C.red },
 		RainbowDelimiterYellow = { fg = C.yellow },
 		RainbowDelimiterBlue = { fg = C.blue },
-		RainbowDelimiterOrange = { fg = C.peach },
+		RainbowDelimiterOrange = { fg = C.monokai_orange },
 		RainbowDelimiterGreen = { fg = C.green },
-		RainbowDelimiterViolet = { fg = C.mauve },
-		RainbowDelimiterCyan = { fg = C.teal },
+		RainbowDelimiterViolet = { fg = C.monokai_violet },
+		RainbowDelimiterCyan = { fg = C.monokai_cyan },
 	}
 end
 

@@ -6,9 +6,9 @@ function M.get()
 		WhichKeyBorder = { link = "FloatBorder" },
 
 		WhichKeyGroup = { fg = C.blue },
-		WhichKeySeparator = { fg = C.overlay0 },
-		WhichKeyDesc = { fg = C.pink },
-		WhichKeyValue = { fg = C.overlay0 },
+		WhichKeySeparator = { fg = C.tiffany },
+		WhichKeyDesc = { fg = C.monokai_magenta },
+		WhichKeyValue = { fg = C.tiffany },
 	}
 end
 
