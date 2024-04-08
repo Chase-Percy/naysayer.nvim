@@ -38,8 +38,8 @@ function M.get()
 		}, -- normal text in non-current windows
 		NormalSB = { fg = C.white, bg = C.darkest_green }, -- normal text in non-current windows
 		NormalFloat = { fg = C.white, bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.darkest_green }, -- Normal text in floating windows.
-		FloatBorder = { fg = C.white },
-		FloatTitle = { fg = C.white }, -- Title of floating windows
+		FloatBorder = { fg = C.brown },
+		FloatTitle = { fg = C.brown }, -- Title of floating windows
 		Pmenu = {
 			bg = (O.transparent_background and vim.o.pumblend == 0) and C.none or U.darken(C.darker_green, 0.8, C.darkest_green),
 			fg = C.green,
