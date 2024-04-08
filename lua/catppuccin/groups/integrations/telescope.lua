@@ -7,7 +7,7 @@ function M.get()
 				fg = O.transparent_background and C.blue or C.darkest_green,
 				bg = O.transparent_background and C.none or C.darkest_green,
 			},
-			TelescopeMatching = { fg = C.blue },
+			TelescopeMatching = { fg = C.yellow },
 			TelescopeNormal = {
 				bg = O.transparent_background and C.none or C.darkest_green,
 			},
@@ -49,11 +49,11 @@ function M.get()
 		TelescopeBorder = { link = "FloatBorder" },
 		TelescopeSelectionCaret = { fg = C.monokai_yellow },
 		TelescopeSelection = {
-			fg = O.transparent_background and C.monokai_yellow or C.brown,
+			fg = O.transparent_background and C.monokai_yellow or C.white,
 			bg = O.transparent_background and C.none or C.darker_green,
 			style = { "bold" },
 		},
-		TelescopeMatching = { fg = C.blue },
+		TelescopeMatching = { fg = C.yellow },
 	}
 end
 

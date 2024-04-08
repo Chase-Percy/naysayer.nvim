@@ -16,20 +16,20 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 		-- Identifiers
 		["@variable"] = { fg = C.white, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
 		["@variable.builtin"] = { fg = C.red, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
-		["@variable.parameter"] = { fg = C.monokai_magenta, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.white }, -- For fields.
+		["@variable.parameter"] = { fg = C.white, style = O.styles.variables or {} }, -- For parameters of a function.
+		["@variable.member"] = { fg = C.light_green }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
 		["@constant.builtin"] = { fg = C.monokai_orange, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
 		["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
 
-		["@module"] = { fg = C.white, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
+		["@module"] = { fg = C.tiffany, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
 		["@label"] = { link = "Label" }, -- For labels: label: in C and :label: in Lua.
 
 		-- Literals
 		["@string"] = { link = "String" }, -- For strings.
-		["@string.regexp"] = { fg = C.monokai_orange, style = O.styles.strings or {} }, -- For regexes.
-		["@string.escape"] = { fg = C.monokai_magenta, style = O.styles.strings or {} }, -- For escape characters within a string.
+		["@string.regexp"] = { fg = C.monokai_red, style = O.styles.strings or {} }, -- For regexes.
+		["@string.escape"] = { fg = C.monokai_violet, style = O.styles.strings or {} }, -- For escape characters within a string.
 		["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
 		["@string.special.symbol"] = { fg = C.monokai_yellow },
 		["@string.special.url"] = { fg = C.monokai_yellow, style = { "italic", "underline" } }, -- urls, links and emails
@@ -43,7 +43,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- Types
 		["@type"] = { link = "Type" }, -- For types.
-		["@type.builtin"] = { fg = C.yellow, style = O.styles.properties or { "italic" } }, -- For builtin types.
+		["@type.builtin"] = { link = "Type" }, -- For builtin types.
 		["@type.definition"] = { link = "Type" }, -- type definitions (e.g. `typedef` in C)
 		["@type.qualifier"] = { link = "Keyword" }, -- type qualifiers (e.g. `const`)
 
@@ -52,24 +52,24 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- Functions
 		["@function"] = { link = "Function" }, -- For function (calls and definitions).
-		["@function.builtin"] = { fg = C.monokai_orange, style = O.styles.functions or {} }, -- For builtin functions: table.insert in Lua.
+		["@function.builtin"] = { link = "Function" }, -- For builtin functions: table.insert in Lua.
 		["@function.call"] = { link = "Function" }, -- function calls
-		["@function.macro"] = { fg = C.monokai_cyan, style = O.styles.functions or {} }, -- For macro defined functions (calls and definitions): each macro_rules in Rust.
+		["@function.macro"] = { link = "Function" }, -- For macro defined functions (calls and definitions): each macro_rules in Rust.
 
 		["@function.method"] = { link = "Function" }, -- For method definitions.
 		["@function.method.call"] = { link = "Function" }, -- For method calls.
 
-		["@constructor"] = { fg = C.blue }, -- For constructor calls and definitions: = { } in Lua, and Java constructors.
+		["@constructor"] = { fg = C.yellow }, -- For constructor calls and definitions: = { } in Lua, and Java constructors.
 		["@operator"] = { link = "Operator" }, -- For any operator: +, but also -> and * in C.
 
 		-- Keywords
 		["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
-		["@keyword.function"] = { fg = C.monokai_violet, style = O.styles.keywords or {} }, -- For keywords used to define a function.
-		["@keyword.operator"] = { fg = C.monokai_violet, style = O.styles.operators or {} }, -- For new keyword operator
+		["@keyword.function"] = { fg = C.brown, style = O.styles.keywords or {} }, -- For keywords used to define a function.
+		["@keyword.operator"] = { fg = C.brown, style = O.styles.operators or {} }, -- For new keyword operator
 		["@keyword.import"] = { link = "Include" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		["@keyword.storage"] = { link = "StorageClass" }, -- visibility/life-time/etc. modifiers (e.g. `static`)
 		["@keyword.repeat"] = { link = "Repeat" }, -- For keywords related to loops.
-		["@keyword.return"] = { fg = C.monokai_violet, style = O.styles.keywords or {} },
+		["@keyword.return"] = { fg = C.brown, style = O.styles.keywords or {} },
 		["@keyword.exception"] = { link = "Exception" }, -- For exception related keywords.
 
 		["@keyword.conditional"] = { link = "Conditional" }, -- For keywords related to conditionnals.
@@ -81,7 +81,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin catppucci
 
 		-- Punctuation
 		["@punctuation.delimiter"] = { link = "Delimiter" }, -- For delimiters (e.g. `;` / `.` / `,`).
-		["@punctuation.bracket"] = { fg = C.green }, -- For brackets and parenthesis.
+		["@punctuation.bracket"] = { fg = C.monokai_blue }, -- For brackets and parenthesis.
 		["@punctuation.special"] = { link = "Special" }, -- For special punctuation that does not fall in the categories before (e.g. `{}` in string interpolation).
 
 		-- Comment

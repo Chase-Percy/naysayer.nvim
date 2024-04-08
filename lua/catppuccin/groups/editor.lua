@@ -21,7 +21,7 @@ function M.get()
 		SignColumnSB = { bg = C.darkest_green, fg = C.dark_green }, -- column where |signs| are displayed
 		Substitute = { bg = C.dark_green, fg = U.vary_color({ latte = C.red }, C.monokai_magenta) }, -- |:substitute| replacement text highlighting
 		LineNr = { fg = C.dark_green }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-		CursorLineNr = { fg = C.grey }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
+		CursorLineNr = { fg = C.grey, style = { "bold" } }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
 		MatchParen = { fg = C.monokai_orange, bg = C.dark_green, style = { "bold" } }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 		ModeMsg = { fg = C.white, style = { "bold" } }, -- 'showmode' message (e.g., "-- INSERT -- ")
 		-- MsgArea = { fg = C.white }, -- Area for messages and cmdline, don't set this highlight because of https://github.com/neovim/neovim/issues/17832
@@ -38,7 +38,7 @@ function M.get()
 		}, -- normal text in non-current windows
 		NormalSB = { fg = C.white, bg = C.darkest_green }, -- normal text in non-current windows
 		NormalFloat = { fg = C.white, bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.darkest_green }, -- Normal text in floating windows.
-		FloatBorder = { fg = C.blue },
+		FloatBorder = { fg = C.white },
 		FloatTitle = { fg = C.white }, -- Title of floating windows
 		Pmenu = {
 			bg = (O.transparent_background and vim.o.pumblend == 0) and C.none or U.darken(C.darker_green, 0.8, C.darkest_green),

@@ -6,34 +6,34 @@ return function(flavour)
 	local transparent_bg = O.transparent_background and "NONE" or C.darkest_green
 
 	catppuccin.normal = {
-		a = { bg = C.blue, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.blue },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 		c = { bg = transparent_bg, fg = C.brown },
 	}
 
 	catppuccin.insert = {
-		a = { bg = C.green, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.green },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 	}
 
 	catppuccin.terminal = {
-		a = { bg = C.green, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.green },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 	}
 
 	catppuccin.command = {
-		a = { bg = C.monokai_orange, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.monokai_orange },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 	}
 
 	catppuccin.visual = {
-		a = { bg = C.monokai_violet, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.monokai_violet },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 	}
 
 	catppuccin.replace = {
-		a = { bg = C.red, fg = C.darkest_green, gui = "bold" },
-		b = { bg = C.darker_green, fg = C.red },
+		a = { bg = C.brown, fg = C.darkest_green, gui = "bold" },
+		b = { bg = C.darker_green, fg = C.brown },
 	}
 
 	catppuccin.inactive = {

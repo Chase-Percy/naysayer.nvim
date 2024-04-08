@@ -8,6 +8,7 @@ local M = {
 			light = "naysayer",
 			dark = "naysayer",
 		},
+
 		compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
 		transparent_background = false,
 		show_end_of_buffer = false,
