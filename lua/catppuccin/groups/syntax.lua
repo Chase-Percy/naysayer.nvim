@@ -44,8 +44,8 @@ function M.get()
 
 		Error = { fg = C.red }, -- (preferred) any erroneous construct
 		Todo = { bg = C.monokai_magenta, fg = C.darkest_green, style = { "bold" } }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-		qfLineNr = { fg = C.yellow },
-		qfFileName = { fg = C.blue },
+		qfLineNr = { fg = C.brown },
+		qfFileName = { fg = C.brown },
 		htmlH1 = { fg = C.white, style = { "bold" } },
 		htmlH2 = { fg = C.white, style = { "bold" } },
 		-- mkdHeading = { fg = C.monokai_orange, style = { "bold" } },
