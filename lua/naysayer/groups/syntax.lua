@@ -17,7 +17,7 @@ function M.get()
 		Repeat = { fg = C.brown, style = O.styles.loops or {} }, --   for, do, while, etc.
 		Label = { fg = C.brown }, --    case, default, etc.
 		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.brown, style = O.styles.keywords or {} }, --  any other keyword
+		Keyword = { fg = C.tiffany, style = O.styles.keywords or {} }, --  any other keyword
 		Exception = { fg = C.brown, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
@@ -29,7 +29,7 @@ function M.get()
 		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
 		Structure = { fg = C.white }, --  struct, union, enum, etc.
 		Special = { fg = C.white }, -- (preferred) any special symbol
-		Type = { fg = C.tiffany, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
+		Type = { fg = C.brown, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
 		Tag = { fg = C.monokai_blue, style = { "bold" } }, -- you can use CTRL-] on this
