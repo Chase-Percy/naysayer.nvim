@@ -17,7 +17,7 @@ function M.get()
 		Repeat = { fg = C.white, style = O.styles.loops or {} }, --   for, do, while, etc.
 		Label = { fg = C.brown }, --    case, default, etc.
 		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.white, style = O.styles.keywords or {} }, --  any other keyword
+		Keyword = { fg = C.mint, style = O.styles.keywords or {} }, --  any other keyword
 		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
