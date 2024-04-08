@@ -13,7 +13,7 @@ function M.get()
 		Identifier = { fg = C.grey, style = O.styles.variables or {} }, -- (preferred) any variable name
 		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.white }, -- (preferred) any statement
-		Conditional = { fg = C.white, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
+		Conditional = { fg = C.mint, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = C.white, style = O.styles.loops or {} }, --   for, do, while, etc.
 		Label = { fg = C.brown }, --    case, default, etc.
 		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
