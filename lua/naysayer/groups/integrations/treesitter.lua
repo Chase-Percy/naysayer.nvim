@@ -59,7 +59,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@function.method"] = { link = "Function" }, -- For method definitions.
 		["@function.method.call"] = { link = "Function" }, -- For method calls.
 
-		["@constructor"] = { fg = C.yellow }, -- For constructor calls and definitions: = { } in Lua, and Java constructors.
+		["@constructor"] = { fg = C.brown }, -- For constructor calls and definitions: = { } in Lua, and Java constructors.
 		["@operator"] = { link = "Operator" }, -- For any operator: +, but also -> and * in C.
 
 		-- Keywords
