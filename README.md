@@ -3,10 +3,8 @@ A Neovim colorscheme based on Jonathan Blow's streams.
 # Features
 
 - Supports both vim and neovim (Requires [neovim](https://github.com/neovim/neovim/) >= 0.8 or [vim](https://github.com/vim/vim) >= 9 compiled with [lua](https://github.com/lua/lua) >= 5.1)
-- Highly configurable with 4 different flavours and [ability to create your own!](https://github.com/naysayer/nvim/discussions/323)
 - [Compile](https://github.com/naysayer/nvim#Compile) user config for [fastest startuptime](https://www.reddit.com/r/neovim/comments/xxfpt3/naysayernvim_now_startup_in_1ms/)
 - Integrations with lsp, treesitter and [a bunch of plugins](https://github.com/naysayer/nvim#integrations)
-- Supports for [many other applications](https://github.com/naysayer/naysayer)
 
 # Usage
 
@@ -149,7 +147,7 @@ require("naysayer").setup({
 
 # Acknowledgments
 
-- This repo began as a fork from [Catppuccin](https://github.com/naysayer/nvim?tab=readme-ov-file#Compile).
+- This repo began as a fork from [Catppuccin]([https://github.com/cat/nvim?tab=readme-ov-file#Compile](https://github.com/catppuccin/nvim)).
 - Color palette taken from [this](https://github.com/nickav/naysayer-theme.el/tree/master) emacs version of the colorscheme.
 
 <!-- panvimdoc-ignore-start -->
