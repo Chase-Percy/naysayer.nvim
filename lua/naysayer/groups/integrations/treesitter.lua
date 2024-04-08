@@ -14,10 +14,10 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 	local colors = { -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 		-- Identifiers
-		["@variable"] = { fg = C.brown, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = C.light_green, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
-		["@variable.parameter"] = { fg = C.brown, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.brown }, -- For fields.
+		["@variable"] = { fg = C.tiffany, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
+		["@variable.builtin"] = { fg = C.tiffany, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
+		["@variable.parameter"] = { fg = C.tiffany, style = O.styles.variables or {} }, -- For parameters of a function.
+		["@variable.member"] = { fg = C.tiffany }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
 		["@constant.builtin"] = { fg = C.monokai_orange, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
@@ -65,7 +65,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		-- Keywords
 		["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
 		["@keyword.function"] = { fg = C.brown, style = O.styles.keywords or {} }, -- For keywords used to define a function.
-		["@keyword.operator"] = { fg = C.white, style = O.styles.operators or {} }, -- For new keyword operator
+		["@keyword.operator"] = { fg = C.brown, style = O.styles.operators or {} }, -- For new keyword operator
 		["@keyword.import"] = { link = "Include" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		["@keyword.storage"] = { link = "StorageClass" }, -- visibility/life-time/etc. modifiers (e.g. `static`)
 		["@keyword.repeat"] = { link = "Repeat" }, -- For keywords related to loops.
