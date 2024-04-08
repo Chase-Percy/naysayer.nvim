@@ -149,9 +149,3 @@ require("naysayer").setup({
 
 - This repo began as a fork from [Catppuccin]([https://github.com/cat/nvim?tab=readme-ov-file#Compile](https://github.com/catppuccin/nvim)).
 - Color palette taken from [this](https://github.com/nickav/naysayer-theme.el/tree/master) emacs version of the colorscheme.
-
-<!-- panvimdoc-ignore-start -->
-
-<p align="center"><a href="https://github.com/naysayer/naysayer/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
-
-<!-- panvimdoc-ignore-end -->
