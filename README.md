@@ -8,31 +8,10 @@ A Neovim colorscheme based on Jonathan Blow's streams.
 - Integrations with lsp, treesitter and [a bunch of plugins](https://github.com/naysayer/nvim#integrations)
 - Supports for [many other applications](https://github.com/naysayer/naysayer)
 
-# Installation
-
-[lazy.nvim](https://github.com/folke/lazy.nvim)
-```lua
-{ "naysayer/nvim", name = "naysayer", priority = 1000 }
-```
-
-[packer.nvim](https://github.com/wbthomason/packer.nvim)
-```lua
-use { "naysayer/nvim", as = "naysayer" }
-```
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-```vim
-Plug 'naysayer/nvim', { 'as': 'naysayer' }
-```
-
 # Usage
 
-```vim
-colorscheme naysayer " naysayer-latte, naysayer-frappe, naysayer-macchiato, naysayer-mocha
-```
-
 ```lua
-vim.cmd.colorscheme "naysayer"
+vim.cmd.colorscheme("naysayer")
 ```
 
 # Configuration
@@ -41,11 +20,11 @@ There is no need to call `setup` if you don't want to change the default options
 
 ```lua
 require("naysayer").setup({
-    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    flavour = "naysayer",
     -- flavour = "auto" -- will respect terminal's background
     background = { -- :h background
-        light = "latte",
-        dark = "mocha",
+        light = "naysayer",
+        dark = "naysayer",
     },
     transparent_background = false, -- disables setting the background color.
     show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
@@ -91,7 +70,7 @@ require("naysayer").setup({
 })
 
 -- setup must be called before loading
-vim.cmd.colorscheme "naysayer"
+vim.cmd.colorscheme("naysayer")
 ```
 
 # Customize highlights
