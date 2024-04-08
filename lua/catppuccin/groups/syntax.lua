@@ -2,7 +2,7 @@ local M = {}
 
 function M.get()
 	return {
-		Comment = { fg = C.grey, style = O.styles.comments }, -- just comments
+		Comment = { fg = C.green, style = O.styles.comments }, -- just comments
 		SpecialComment = { link = "Special" }, -- special things inside a comment
 		Constant = { fg = C.monokai_yellow }, -- (preferred) any constant
 		String = { fg = C.monokai_yellow, style = O.styles.strings or {} }, -- a string constant: "this is a string"
@@ -11,17 +11,17 @@ function M.get()
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
 		Boolean = { fg = C.mint, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
 		Identifier = { fg = C.grey, style = O.styles.variables or {} }, -- (preferred) any variable name
-		Function = { fg = C.tiffany, style = O.styles.functions or {} }, -- function name (also: methods for classes)
+		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.white }, -- (preferred) any statement
 		Conditional = { fg = C.brown, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = C.brown, style = O.styles.loops or {} }, --   for, do, while, etc.
 		Label = { fg = C.brown }, --    case, default, etc.
-		Operator = { fg = C.brown, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.brown, style = O.styles.keywords or {} }, --  any other keyword
+		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
+		Keyword = { fg = C.white, style = O.styles.keywords or {} }, --  any other keyword
 		Exception = { fg = C.brown, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
-		Include = { fg = C.brown, style = O.styles.keywords or {} }, --  preprocessor #include
+		Include = { fg = C.white, style = O.styles.keywords or {} }, --  preprocessor #include
 		Define = { link = "PreProc" }, -- preprocessor #define
 		Macro = { fg = C.light_green }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
@@ -33,7 +33,7 @@ function M.get()
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
 		Tag = { fg = C.monokai_blue, style = { "bold" } }, -- you can use CTRL-] on this
-		Delimiter = { fg = C.brown }, -- character that needs attention
+		Delimiter = { fg = C.white }, -- character that needs attention
 		Debug = { link = "Special" }, -- debugging statements
 
 		Underlined = { style = { "underline" } }, -- (preferred) text that stands out, HTML links
