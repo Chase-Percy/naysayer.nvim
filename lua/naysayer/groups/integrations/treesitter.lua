@@ -81,7 +81,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Punctuation
 		["@punctuation.delimiter"] = { link = "Delimiter" }, -- For delimiters (e.g. `;` / `.` / `,`).
-		["@punctuation.bracket"] = { fg = C.brown }, -- For brackets and parenthesis.
+		["@punctuation.bracket"] = { fg = C.white }, -- For brackets and parenthesis.
 		["@punctuation.special"] = { link = "Special" }, -- For special punctuation that does not fall in the categories before (e.g. `{}` in string interpolation).
 
 		-- Comment

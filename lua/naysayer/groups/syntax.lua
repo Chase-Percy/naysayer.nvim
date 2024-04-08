@@ -33,7 +33,7 @@ function M.get()
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
 		Tag = { fg = C.monokai_blue, style = { "bold" } }, -- you can use CTRL-] on this
-		Delimiter = { fg = C.brown }, -- character that needs attention
+		Delimiter = { fg = C.white }, -- character that needs attention
 		Debug = { link = "Special" }, -- debugging statements
 
 		Underlined = { style = { "underline" } }, -- (preferred) text that stands out, HTML links
