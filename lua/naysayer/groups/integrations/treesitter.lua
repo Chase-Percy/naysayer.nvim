@@ -15,7 +15,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 	local colors = { -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 		-- Identifiers
 		["@variable"] = { fg = C.brown, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = C.red, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
+		["@variable.builtin"] = { fg = C.brown, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
 		["@variable.parameter"] = { fg = C.brown, style = O.styles.variables or {} }, -- For parameters of a function.
 		["@variable.member"] = { fg = C.brown }, -- For fields.
 
