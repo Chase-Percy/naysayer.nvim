@@ -1,5 +1,5 @@
 -- TODO: private _G.vim
-vim.command [[command! NaysayerCompile lua require('catppuccin').compile() print("Naysayer (info): compiled cache!")]]
+vim.command [[command! NaysayerCompile lua require('naysayer').compile() print("Naysayer (info): compiled cache!")]]
 
 vim.o = setmetatable({}, {
 	__index = function(_, k)
