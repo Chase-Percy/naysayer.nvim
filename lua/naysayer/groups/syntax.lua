@@ -21,7 +21,7 @@ function M.get()
 		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
-		Include = { fg = C.white, style = O.styles.keywords or {} }, --  preprocessor #include
+		Include = { fg = C.mint, style = O.styles.keywords or {} }, --  preprocessor #include
 		Define = { link = "PreProc" }, -- preprocessor #define
 		Macro = { fg = C.light_green }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
