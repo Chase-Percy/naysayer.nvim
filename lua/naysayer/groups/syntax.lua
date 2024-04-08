@@ -19,7 +19,6 @@ function M.get()
 		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
 		Keyword = { fg = C.brown, style = O.styles.keywords or {} }, --  any other keyword
 		Exception = { fg = C.brown, style = O.styles.keywords or {} }, --  try, catch, throw
-		Spell = { fg = C.grey, style = O.styles.comments },
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
 		Include = { fg = C.brown, style = O.styles.keywords or {} }, --  preprocessor #include
