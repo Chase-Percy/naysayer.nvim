@@ -15,12 +15,12 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 	local colors = { -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 		-- Identifiers
 		["@variable"] = { fg = C.brown, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = C.brown, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
+		["@variable.builtin"] = { fg = C.tiffany, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
 		["@variable.parameter"] = { fg = C.brown, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.tiffany }, -- For fields.
+		["@variable.member"] = { fg = C.brown }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
-		["@constant.builtin"] = { fg = C.monokai_orange, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
+		["@constant.builtin"] = { fg = C.brown, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
 		["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
 
 		["@module"] = { fg = C.tiffany, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
@@ -28,8 +28,8 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Literals
 		["@string"] = { link = "String" }, -- For strings.
-		["@string.regexp"] = { fg = C.monokai_red, style = O.styles.strings or {} }, -- For regexes.
-		["@string.escape"] = { fg = C.monokai_violet, style = O.styles.strings or {} }, -- For escape characters within a string.
+		["@string.regexp"] = { fg = C.tiffany, style = O.styles.strings or {} }, -- For regexes.
+		["@string.escape"] = { fg = C.tiffany, style = O.styles.strings or {} }, -- For escape characters within a string.
 		["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
 		["@string.special.symbol"] = { fg = C.monokai_yellow },
 		["@string.special.url"] = { fg = C.monokai_yellow, style = { "italic", "underline" } }, -- urls, links and emails
