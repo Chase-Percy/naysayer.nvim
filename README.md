@@ -75,17 +75,6 @@ vim.cmd.colorscheme("naysayer")
 
 # Customize highlights
 
-## Get naysayer colors
-
-```lua
-local latte = require("naysayer.palettes").get_palette "latte"
-local frappe = require("naysayer.palettes").get_palette "frappe"
-local macchiato = require("naysayer.palettes").get_palette "macchiato"
-local mocha = require("naysayer.palettes").get_palette "mocha"
-```
-
-Returns a table where the key is the name of the color and the value is its hex value corresponding to each flavour.
-
 ## Overwriting colors
 
 Colors can be overwritten using `color_overrides` in the setting, checkout https://github.com/naysayer/nvim/discussions/323 for inspirations:
@@ -125,41 +114,6 @@ require("naysayer").setup {
             Pmenu = { bg = colors.none },
         }
     end
-}
-```
-
-Per flavour highlight groups can also be overwritten in the setting, for example:
-
-```lua
-require("naysayer").setup {
-    highlight_overrides = {
-        all = function(colors)
-            return {
-                NvimTreeNormal = { fg = colors.none },
-                CmpBorder = { fg = "#3e4145" },
-            }
-        end,
-        latte = function(latte)
-            return {
-                Normal = { fg = latte.base },
-            }
-        end,
-        frappe = function(frappe)
-            return {
-                ["@comment"] = { fg = frappe.surface2, style = { "italic" } },
-            }
-        end,
-        macchiato = function(macchiato)
-            return {
-                LineNr = { fg = macchiato.overlay1 },
-            }
-        end,
-        mocha = function(mocha)
-            return {
-                Comment = { fg = mocha.flamingo },
-            }
-        end,
-    },
 }
 ```
 
