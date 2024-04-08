@@ -3,36 +3,36 @@ A Neovim colorscheme based on Jonathan Blow's streams.
 # Features
 
 - Supports both vim and neovim (Requires [neovim](https://github.com/neovim/neovim/) >= 0.8 or [vim](https://github.com/vim/vim) >= 9 compiled with [lua](https://github.com/lua/lua) >= 5.1)
-- Highly configurable with 4 different flavours and [ability to create your own!](https://github.com/catppuccin/nvim/discussions/323)
-- [Compile](https://github.com/catppuccin/nvim#Compile) user config for [fastest startuptime](https://www.reddit.com/r/neovim/comments/xxfpt3/catppuccinnvim_now_startup_in_1ms/)
-- Integrations with lsp, treesitter and [a bunch of plugins](https://github.com/catppuccin/nvim#integrations)
-- Supports for [many other applications](https://github.com/catppuccin/catppuccin)
+- Highly configurable with 4 different flavours and [ability to create your own!](https://github.com/naysayer/nvim/discussions/323)
+- [Compile](https://github.com/naysayer/nvim#Compile) user config for [fastest startuptime](https://www.reddit.com/r/neovim/comments/xxfpt3/naysayernvim_now_startup_in_1ms/)
+- Integrations with lsp, treesitter and [a bunch of plugins](https://github.com/naysayer/nvim#integrations)
+- Supports for [many other applications](https://github.com/naysayer/naysayer)
 
 # Installation
 
 [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
-{ "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+{ "naysayer/nvim", name = "naysayer", priority = 1000 }
 ```
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
-use { "catppuccin/nvim", as = "catppuccin" }
+use { "naysayer/nvim", as = "naysayer" }
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'naysayer/nvim', { 'as': 'naysayer' }
 ```
 
 # Usage
 
 ```vim
-colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+colorscheme naysayer " naysayer-latte, naysayer-frappe, naysayer-macchiato, naysayer-mocha
 ```
 
 ```lua
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "naysayer"
 ```
 
 # Configuration
@@ -40,7 +40,7 @@ vim.cmd.colorscheme "catppuccin"
 There is no need to call `setup` if you don't want to change the default options and settings.
 
 ```lua
-require("catppuccin").setup({
+require("naysayer").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     -- flavour = "auto" -- will respect terminal's background
     background = { -- :h background
@@ -86,33 +86,33 @@ require("catppuccin").setup({
             enabled = true,
             indentscope_color = "",
         },
-        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+        -- For more plugins integrations please scroll down (https://github.com/naysayer/nvim#integrations)
     },
 })
 
 -- setup must be called before loading
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "naysayer"
 ```
 
 # Customize highlights
 
-## Get catppuccin colors
+## Get naysayer colors
 
 ```lua
-local latte = require("catppuccin.palettes").get_palette "latte"
-local frappe = require("catppuccin.palettes").get_palette "frappe"
-local macchiato = require("catppuccin.palettes").get_palette "macchiato"
-local mocha = require("catppuccin.palettes").get_palette "mocha"
+local latte = require("naysayer.palettes").get_palette "latte"
+local frappe = require("naysayer.palettes").get_palette "frappe"
+local macchiato = require("naysayer.palettes").get_palette "macchiato"
+local mocha = require("naysayer.palettes").get_palette "mocha"
 ```
 
 Returns a table where the key is the name of the color and the value is its hex value corresponding to each flavour.
 
 ## Overwriting colors
 
-Colors can be overwritten using `color_overrides` in the setting, checkout https://github.com/catppuccin/nvim/discussions/323 for inspirations:
+Colors can be overwritten using `color_overrides` in the setting, checkout https://github.com/naysayer/nvim/discussions/323 for inspirations:
 
 ```lua
-require("catppuccin").setup {
+require("naysayer").setup {
     color_overrides = {
         all = {
             text = "#ffffff",
@@ -130,14 +130,14 @@ require("catppuccin").setup {
 ```
 
 > [!Note]
-> For more information check out our [style-guide](https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md)
+> For more information check out our [style-guide](https://github.com/naysayer/naysayer/blob/main/docs/style-guide.md)
 
 ## Overwriting highlight groups
 
 Global highlight groups can be overwritten in the setting, for example:
 
 ```lua
-require("catppuccin").setup {
+require("naysayer").setup {
     custom_highlights = function(colors)
         return {
             Comment = { fg = colors.flamingo },
@@ -152,7 +152,7 @@ require("catppuccin").setup {
 Per flavour highlight groups can also be overwritten in the setting, for example:
 
 ```lua
-require("catppuccin").setup {
+require("naysayer").setup {
     highlight_overrides = {
         all = function(colors)
             return {
@@ -186,12 +186,12 @@ require("catppuccin").setup {
 
 # Integrations
 
-Catppuccin provides theme support for other plugins in the Neovim ecosystem and extended Neovim functionality through _integrations_.
+Naysayer provides theme support for other plugins in the Neovim ecosystem and extended Neovim functionality through _integrations_.
 
 To enable/disable an integration you just need to set it to true/false, for example:
 
 ```lua
-require("catppuccin").setup({
+require("naysayer").setup({
     integrations = {
         cmp = true,
         gitsigns = true,
@@ -209,18 +209,18 @@ require("catppuccin").setup({
 Some integrations are enabled by default, you can control this behaviour with `default_integrations` option.
 
 ```lua
-require("catppuccin").setup({
+require("naysayer").setup({
     default_integrations = false,
 })
 ```
 
 # Acknowledgments
 
-- This repo began as a fork from [Catpuccin](https://github.com/catppuccin/nvim?tab=readme-ov-file#Compile).
+- This repo began as a fork from [Catpuccin](https://github.com/naysayer/nvim?tab=readme-ov-file#Compile).
 - Color palette taken from [this](https://github.com/nickav/naysayer-theme.el/tree/master) emacs version of the colorscheme.
 
 <!-- panvimdoc-ignore-start -->
 
-<p align="center"><a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
+<p align="center"><a href="https://github.com/naysayer/naysayer/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a></p>
 
 <!-- panvimdoc-ignore-end -->

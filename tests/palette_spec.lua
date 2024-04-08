@@ -1,8 +1,8 @@
 local function reload()
 	for name, _ in pairs(package.loaded) do
-		if name:match "^catppuccin" then package.loaded[name] = nil end
+		if name:match "^naysayer" then package.loaded[name] = nil end
 	end
-	vim.g.catppuccin_flavour = nil
+	vim.g.naysayer_flavour = nil
 	vim.cmd [[highlight clear]]
 end
 
@@ -10,10 +10,10 @@ end
 describe("get palette", function()
 	before_each(function() reload() end)
 	it("before setup", function()
-		assert.equals(pcall(function() require("catppuccin.palettes").get_palette() end), true)
+		assert.equals(pcall(function() require("naysayer.palettes").get_palette() end), true)
 	end)
 	it("after setup", function()
-		require("catppuccin").setup()
-		assert.equals(pcall(function() require("catppuccin.palettes").get_palette() end), true)
+		require("naysayer").setup()
+		assert.equals(pcall(function() require("naysayer.palettes").get_palette() end), true)
 	end)
 end)

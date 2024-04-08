@@ -3,8 +3,8 @@ try
 	Plug expand('<sfile>')[0:-16] 
 	call plug#end()
 
-	lua require("catppuccin").setup {}
-	colorscheme catppuccin
+	lua require("naysayer").setup {}
+	colorscheme naysayer
 catch
 	echo v:exception
 	1cq
