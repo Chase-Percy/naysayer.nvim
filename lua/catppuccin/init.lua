@@ -9,7 +9,7 @@ local M = {
 			dark = "naysayer",
 		},
 
-		compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
+		compile_path = vim.fn.stdpath "cache" .. "/naysayer",
 		transparent_background = false,
 		show_end_of_buffer = false,
 		term_colors = false,
