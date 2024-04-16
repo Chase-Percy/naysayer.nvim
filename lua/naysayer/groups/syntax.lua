@@ -11,12 +11,12 @@ function M.get()
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
 		Boolean = { fg = C.tiffany, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
 		Identifier = { fg = C.brown, style = O.styles.variables or {} }, -- (preferred) any variable name
-		Function = { fg = C.white, style = O.styles.functions or {} }, -- function name (also: methods for classes)
-		Statement = { fg = C.white }, -- (preferred) any statement
+		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
+		Statement = { fg = C.brown }, -- (preferred) any statement
 		Conditional = { fg = C.white, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
 		Repeat = { fg = C.white, style = O.styles.loops or {} }, --   for, do, while, etc.
 		Label = { fg = C.white }, --    case, default, etc.
-		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
+		Operator = { fg = C.brown, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
 		Keyword = { fg = C.white, style = O.styles.keywords or {} }, --  any other keyword
 		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
 
