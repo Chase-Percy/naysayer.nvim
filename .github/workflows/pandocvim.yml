@@ -14,8 +14,8 @@ jobs:
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
-          vimdoc: catppuccin
-          description: "Soothing pastel theme for NeoVim"
+          vimdoc: Naysayer
+          description: "Neovim green theme based on Jonathan Blow's streams."
           pandoc: "README.md"
           toc: true
           version: "nvim >= 0.8.0"
