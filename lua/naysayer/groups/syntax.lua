@@ -5,20 +5,20 @@ function M.get()
 		Comment = { fg = C.green, style = O.styles.comments }, -- just comments
 		SpecialComment = { link = "Special" }, -- special things inside a comment
 		Constant = { fg = C.monokai_yellow }, -- (preferred) any constant
-		String = { fg = C.brown, style = O.styles.strings or {} }, -- a string constant: "this is a string"
+		String = { fg = C.tiffany, style = O.styles.strings or {} }, -- a string constant: "this is a string"
 		Character = { fg = C.tiffany }, --  a character constant: 'c', '\n'
-		Number = { fg = C.mint, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
+		Number = { fg = C.tiffany, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
-		Boolean = { fg = C.mint, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
-		Identifier = { fg = C.grey, style = O.styles.variables or {} }, -- (preferred) any variable name
-		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
+		Boolean = { fg = C.tiffany, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
+		Identifier = { fg = C.brown, style = O.styles.variables or {} }, -- (preferred) any variable name
+		Function = { fg = C.white, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.white }, -- (preferred) any statement
-		Conditional = { fg = C.brown, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
-		Repeat = { fg = C.brown, style = O.styles.loops or {} }, --   for, do, while, etc.
-		Label = { fg = C.brown }, --    case, default, etc.
+		Conditional = { fg = C.white, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
+		Repeat = { fg = C.white, style = O.styles.loops or {} }, --   for, do, while, etc.
+		Label = { fg = C.white }, --    case, default, etc.
 		Operator = { fg = C.white, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.tiffany, style = O.styles.keywords or {} }, --  any other keyword
-		Exception = { fg = C.brown, style = O.styles.keywords or {} }, --  try, catch, throw
+		Keyword = { fg = C.white, style = O.styles.keywords or {} }, --  any other keyword
+		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
 		Include = { fg = C.tiffany, style = O.styles.keywords or {} }, --  preprocessor #include
