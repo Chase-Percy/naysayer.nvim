@@ -11,7 +11,7 @@ local status, error = pcall(function()
 	vim.opt.runtimepath:prepend(lazypath)
 
 	require("lazy").setup({
-		{ "naysayer/nvim", dev = true },
+		{ "jameswalls/naysayer.nvim", dev = true },
 	}, {
 		root = root .. "/plugins",
 		dev = {
