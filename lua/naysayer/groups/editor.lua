@@ -9,7 +9,10 @@ function M.get()
 		CursorIM = { fg = C.darkest_green, bg = C.white }, -- like Cursor, but used when in IME mode |CursorIM|
 		CursorColumn = { bg = C.darkest_green }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
 		CursorLine = {
-			bg = U.vary_color({ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) }, U.darken(C.darker_green, 0.64, C.darkest_green)),
+			bg = U.vary_color(
+				{ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) },
+				U.darken(C.darker_green, 0.64, C.darkest_green)
+			),
 		}, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if forecrust (ctermfg OR guifg) is not set.
 		Directory = { fg = C.blue }, -- directory names (and other special names in listings)
 		EndOfBuffer = { fg = O.show_end_of_buffer and C.dark_green or C.darkest_green }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
@@ -37,11 +40,15 @@ function M.get()
 				or C.darkest_green,
 		}, -- normal text in non-current windows
 		NormalSB = { fg = C.white, bg = C.darkest_green }, -- normal text in non-current windows
-		NormalFloat = { fg = C.white, bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.darkest_green }, -- Normal text in floating windows.
+		NormalFloat = {
+			fg = C.white,
+			bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.darkest_green,
+		}, -- Normal text in floating windows.
 		FloatBorder = { fg = C.brown },
 		FloatTitle = { fg = C.brown }, -- Title of floating windows
 		Pmenu = {
-			bg = (O.transparent_background and vim.o.pumblend == 0) and C.none or U.darken(C.darker_green, 0.8, C.darkest_green),
+			bg = (O.transparent_background and vim.o.pumblend == 0) and C.none
+				or U.darken(C.darker_green, 0.8, C.darkest_green),
 			fg = C.green,
 		}, -- Popup menu: normal item.
 		PmenuSel = { bg = C.dark_green, style = { "bold" } }, -- Popup menu: selected item.

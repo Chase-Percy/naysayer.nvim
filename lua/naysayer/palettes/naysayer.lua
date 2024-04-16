@@ -21,5 +21,3 @@ return {
 	darkest_green = "#062329",
 	grey = "#c1d1e3",
 }
-
-

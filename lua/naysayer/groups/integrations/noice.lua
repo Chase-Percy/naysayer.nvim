@@ -10,13 +10,16 @@ function M.get()
 		NoiceCmdlinePopupBorder = { fg = C.grey },
 		NoiceCmdlinePopupBorderSearch = { fg = C.yellow },
 		NoiceConfirmBorder = { fg = C.blue },
-		NoiceMini = { fg = C.brown, blend = 0 }, NoiceFormatProgressDone = {
+		NoiceMini = { fg = C.brown, blend = 0 },
+		NoiceFormatProgressDone = {
 			bg = O.transparent_background and C.none or U.darken(C.monokai_blue, 0.30, C.darkest_green),
 			fg = C.brown,
 		},
 		NoiceFormatProgressTodo = {
-			bg = O.transparent_background and C.none
-				or U.vary_color({ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) }, U.darken(C.darker_green, 0.64, C.darkest_green)),
+			bg = O.transparent_background and C.none or U.vary_color(
+				{ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) },
+				U.darken(C.darker_green, 0.64, C.darkest_green)
+			),
 			fg = C.brown,
 		},
 	}

@@ -13,7 +13,10 @@ function M.get()
 			style = { "bold" },
 		},
 		LightspeedMaskedChar = {
-			fg = U.vary_color({ latte = U.lighten(C.monokai_magenta, 0.7, C.brown) }, U.darken(C.monokai_magenta, 0.7, C.darkest_green)),
+			fg = U.vary_color(
+				{ latte = U.lighten(C.monokai_magenta, 0.7, C.brown) },
+				U.darken(C.monokai_magenta, 0.7, C.darkest_green)
+			),
 		},
 		LightspeedUnlabeledMatch = { fg = C.brown, style = { "bold" } },
 		LightspeedGreyWash = { link = "Comment" },

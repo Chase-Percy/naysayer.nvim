@@ -43,7 +43,12 @@ function M.get()
 
 		MiniSurround = { bg = C.monokai_magenta, fg = C.dark_green },
 
-		MiniTablineCurrent = { fg = C.brown, bg = C.darkest_green, sp = C.red, style = { "bold", "italic", "underline" } },
+		MiniTablineCurrent = {
+			fg = C.brown,
+			bg = C.darkest_green,
+			sp = C.red,
+			style = { "bold", "italic", "underline" },
+		},
 		MiniTablineFill = { bg = bg_highlight },
 		MiniTablineHidden = { fg = C.brown, bg = inactive_bg },
 		MiniTablineModifiedCurrent = { fg = C.red, bg = C.none, style = { "bold", "italic" } },

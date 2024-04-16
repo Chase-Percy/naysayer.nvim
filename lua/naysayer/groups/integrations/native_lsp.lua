@@ -89,8 +89,10 @@ function M.get()
 			-- fg of `Comment`
 			fg = C.tiffany,
 			-- bg of `CursorLine`
-			bg = (O.transparent_background or not inlay_hints.background) and C.none
-				or U.vary_color({ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) }, U.darken(C.darker_green, 0.64, C.darkest_green)),
+			bg = (O.transparent_background or not inlay_hints.background) and C.none or U.vary_color(
+				{ latte = U.lighten(C.darkest_green, 0.70, C.darkest_green) },
+				U.darken(C.darker_green, 0.64, C.darkest_green)
+			),
 		}, -- virtual text of the inlay hints
 		LspInfoBorder = { link = "FloatBorder" }, -- LspInfo border
 	}
