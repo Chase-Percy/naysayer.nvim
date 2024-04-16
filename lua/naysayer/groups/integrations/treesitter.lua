@@ -14,25 +14,25 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 	local colors = { -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 		-- Identifiers
-		["@variable"] = { fg = C.brown, style = O.styles.variables or {} }, -- Any variable name that does not have another highlight.
-		["@variable.builtin"] = { fg = C.tiffany, style = O.styles.properties or {} }, -- Variable names that are defined by the languages, like this or self.
-		["@variable.parameter"] = { fg = C.brown, style = O.styles.variables or {} }, -- For parameters of a function.
-		["@variable.member"] = { fg = C.brown }, -- For fields.
+		["@variable"] = { link = "Identifier" }, -- Any variable name that does not have another highlight.
+		["@variable.builtin"] = { link = "Identifier" }, -- Variable names that are defined by the languages, like this or self.
+		["@variable.parameter"] = { link = "Identifier" }, -- For parameters of a function.
+		["@variable.member"] = { link = "Identifier" }, -- For fields.
 
 		["@constant"] = { link = "Constant" }, -- For constants
-		["@constant.builtin"] = { fg = C.brown, style = O.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
-		["@constant.macro"] = { link = "Macro" }, -- For constants that are defined by macros: NULL in C.
+		["@constant.builtin"] = { link = "Constant" }, -- For constant that are built in the language: nil in Lua.
+		["@constant.macro"] = { link = "Constant" }, -- For constants that are defined by macros: NULL in C.
 
 		["@module"] = { fg = C.tiffany, style = O.styles.miscs or { "italic" } }, -- For identifiers referring to modules and namespaces.
 		["@label"] = { link = "Label" }, -- For labels: label: in C and :label: in Lua.
 
 		-- Literals
 		["@string"] = { link = "String" }, -- For strings.
-		["@string.regexp"] = { fg = C.tiffany, style = O.styles.strings or {} }, -- For regexes.
-		["@string.escape"] = { fg = C.tiffany, style = O.styles.strings or {} }, -- For escape characters within a string.
+		["@string.regexp"] = { link = "String" }, -- For regexes.
+		["@string.escape"] = { link = "String" }, -- For escape characters within a string.
 		["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
-		["@string.special.symbol"] = { fg = C.monokai_yellow },
-		["@string.special.url"] = { fg = C.monokai_yellow, style = { "italic", "underline" } }, -- urls, links and emails
+		["@string.special.symbol"] = { link = "Special" },
+		["@string.special.url"] = { link = "Special" }, -- urls, links and emails
 
 		["@character"] = { link = "Character" }, -- character literals
 		["@character.special"] = { link = "SpecialChar" }, -- special characters (e.g. wildcards)
@@ -66,12 +66,12 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Keywords
 		["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
-		["@keyword.function"] = { fg = C.tiffany, style = O.styles.keywords or {} }, -- For keywords used to define a function.
-		["@keyword.operator"] = { fg = C.tiffany, style = O.styles.operators or {} }, -- For new keyword operator
+		["@keyword.function"] = { link = "Keyword" }, -- For keywords used to define a function.
+		["@keyword.operator"] = { link = "Operator" }, -- For new keyword operator
 		["@keyword.import"] = { link = "Include" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		["@keyword.storage"] = { link = "StorageClass" }, -- visibility/life-time/etc. modifiers (e.g. `static`)
 		["@keyword.repeat"] = { link = "Repeat" }, -- For keywords related to loops.
-		["@keyword.return"] = { fg = C.tiffany, style = O.styles.keywords or {} },
+		["@keyword.return"] = { link = "Keyword" },
 		["@keyword.exception"] = { link = "Exception" }, -- For exception related keywords.
 
 		["@keyword.conditional"] = { link = "Conditional" }, -- For keywords related to conditionnals.
@@ -83,16 +83,16 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Punctuation
 		["@punctuation.delimiter"] = { link = "Delimiter" }, -- For delimiters (e.g. `;` / `.` / `,`).
-		["@punctuation.bracket"] = { fg = C.white }, -- For brackets and parenthesis.
+		["@punctuation.bracket"] = { link = "Delimiter" }, -- For brackets and parenthesis.
 		["@punctuation.special"] = { link = "Special" }, -- For special punctuation that does not fall in the categories before (e.g. `{}` in string interpolation).
 
 		-- Comment
 		["@comment"] = { link = "Comment" },
 
-		["@comment.error"] = { fg = C.darkest_green, bg = C.red },
-		["@comment.warning"] = { fg = C.darkest_green, bg = C.yellow },
-		["@comment.hint"] = { fg = C.darkest_green, bg = C.blue },
-		["@comment.todo"] = { fg = C.darkest_green, bg = C.monokai_yellow },
+		["@comment.error"] = { link = "Comment" },
+		["@comment.warning"] = { link = "Comment" },
+		["@comment.hint"] = { link = "Comment" },
+		["@comment.todo"] = { link = "Comment" },
 
 		-- Markup
 		["@markup"] = { fg = C.white }, -- For strings considerated text in a markup language.
