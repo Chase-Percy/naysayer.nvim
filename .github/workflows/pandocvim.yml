@@ -6,21 +6,18 @@ on:
       - '**.md'
 
 jobs:
-  docs:
+  custom_test:
     runs-on: ubuntu-latest
     name: pandoc to vimdoc
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       - name: panvimdoc
-        uses: kdheepak/panvimdoc@main
+        uses: ./
         with:
-          vimdoc: Naysayer
-          description: "Neovim green theme based on Jonathan Blow's streams."
-          pandoc: "README.md"
-          toc: true
-          version: "nvim >= 0.8.0"
+          vimdoc: panvimdoc
+          pandoc: doc/panvimdoc.md
           treesitter: true
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "docs: auto generate vimdoc"
+          commit_message: "Auto generate docs"
           branch: ${{ github.head_ref }}
