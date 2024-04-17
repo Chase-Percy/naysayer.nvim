@@ -13,23 +13,23 @@ function M.get()
 		Identifier = { fg = C.brown, style = O.styles.variables or {} }, -- (preferred) any variable name
 		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.brown }, -- (preferred) any statement
-		Conditional = { fg = C.white, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
-		Repeat = { fg = C.white, style = O.styles.loops or {} }, --   for, do, while, etc.
-		Label = { fg = C.white }, --    case, default, etc.
+		Conditional = { fg = C.grey, style = O.styles.conditionals or {} }, --  if, then, else, endif, switch, etc.
+		Repeat = { fg = C.grey, style = O.styles.loops or {} }, --   for, do, while, etc.
+		Label = { fg = C.grey }, --    case, default, etc.
 		Operator = { fg = C.brown, style = O.styles.operators or {} }, -- "sizeof", "+", "*", etc.
-		Keyword = { fg = C.white, style = O.styles.keywords or {} }, --  any other keyword
-		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
+		Keyword = { fg = C.grey, style = O.styles.keywords or {} }, --  any other keyword
+		Exception = { fg = C.grey, style = O.styles.keywords or {} }, --  try, catch, throw
 
-		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
-		Include = { fg = C.white, style = O.styles.keywords or {} }, --  preprocessor #include
+		PreProc = { fg = C.grey }, -- (preferred) generic Preprocessor
+		Include = { fg = C.grey, style = O.styles.keywords or {} }, --  preprocessor #include
 		Define = { link = "PreProc" }, -- preprocessor #define
 		Macro = { fg = C.light_green }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
 
 		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
-		Structure = { fg = C.white }, --  struct, union, enum, etc.
+		Structure = { fg = C.grey }, --  struct, union, enum, etc.
 		Special = { fg = C.tiffany }, -- (preferred) any special symbol
-		Type = { fg = C.white, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
+		Type = { fg = C.grey, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
 		Tag = { fg = C.monokai_blue, style = { "bold" } }, -- you can use CTRL-] on this
@@ -46,8 +46,8 @@ function M.get()
 		Todo = { bg = C.monokai_magenta, fg = C.darkest_green, style = { "bold" } }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 		qfLineNr = { fg = C.brown },
 		qfFileName = { fg = C.brown },
-		htmlH1 = { fg = C.white, style = { "bold" } },
-		htmlH2 = { fg = C.white, style = { "bold" } },
+		htmlH1 = { fg = C.grey, style = { "bold" } },
+		htmlH2 = { fg = C.grey, style = { "bold" } },
 		-- mkdHeading = { fg = C.monokai_orange, style = { "bold" } },
 		-- mkdCode = { bg = C.terminal_black, fg = C.brown },
 		mkdCodeDelimiter = { bg = C.darkest_green, fg = C.brown },
