@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     name: pandoc to vimdoc
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: panvimdoc
         uses: ./
         with:
           vimdoc: panvimdoc
           pandoc: doc/panvimdoc.md
           treesitter: true
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto generate docs"
           branch: ${{ github.head_ref }}
