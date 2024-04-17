@@ -4,12 +4,12 @@ function M.get()
 	return {
 		Comment = { fg = C.green, style = O.styles.comments }, -- just comments
 		SpecialComment = { link = "Special" }, -- special things inside a comment
-		Constant = { fg = C.monokai_yellow }, -- (preferred) any constant
-		String = { fg = C.tiffany, style = O.styles.strings or {} }, -- a string constant: "this is a string"
-		Character = { fg = C.tiffany }, --  a character constant: 'c', '\n'
-		Number = { fg = C.tiffany, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
+		Constant = { fg = C.mint }, -- (preferred) any constant
+		String = { fg = C.mint, style = O.styles.strings or {} }, -- a string constant: "this is a string"
+		Character = { fg = C.mint }, --  a character constant: 'c', '\n'
+		Number = { fg = C.mint, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
-		Boolean = { fg = C.tiffany, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
+		Boolean = { fg = C.mint, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
 		Identifier = { fg = C.brown, style = O.styles.variables or {} }, -- (preferred) any variable name
 		Function = { fg = C.brown, style = O.styles.functions or {} }, -- function name (also: methods for classes)
 		Statement = { fg = C.brown }, -- (preferred) any statement
@@ -21,7 +21,7 @@ function M.get()
 		Exception = { fg = C.white, style = O.styles.keywords or {} }, --  try, catch, throw
 
 		PreProc = { fg = C.white }, -- (preferred) generic Preprocessor
-		Include = { fg = C.tiffany, style = O.styles.keywords or {} }, --  preprocessor #include
+		Include = { fg = C.mint, style = O.styles.keywords or {} }, --  preprocessor #include
 		Define = { link = "PreProc" }, -- preprocessor #define
 		Macro = { fg = C.light_green }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
