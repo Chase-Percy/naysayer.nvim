@@ -10,7 +10,7 @@ return {
 	blue = "#0000ff",
 	white = "#ffffff",
 	red = "#ff0000",
-	brown = "#d1b897",
+	brown = "#D0C0A0",
 	yellow = "#ffaa00",
 	green = "#44b340",
 	light_green = "#8cde94",
