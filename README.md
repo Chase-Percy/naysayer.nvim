@@ -1,4 +1,4 @@
-# Naysayer
+# Neovim Naysayer
 A Neovim colorscheme based on Jonathan Blow's streams.
 
 ![Preview](./images/preview.png)
