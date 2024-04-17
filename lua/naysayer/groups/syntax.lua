@@ -5,8 +5,8 @@ function M.get()
 		Comment = { fg = C.green, style = O.styles.comments }, -- just comments
 		SpecialComment = { link = "Special" }, -- special things inside a comment
 		Constant = { fg = C.mint }, -- (preferred) any constant
-		String = { fg = C.mint, style = O.styles.strings or {} }, -- a string constant: "this is a string"
-		Character = { fg = C.mint }, --  a character constant: 'c', '\n'
+		String = { fg = C.tiffany, style = O.styles.strings or {} }, -- a string constant: "this is a string"
+		Character = { fg = C.tiffany }, --  a character constant: 'c', '\n'
 		Number = { fg = C.mint, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
 		Float = { link = "Number" }, --    a floating point constant: 2.3e10
 		Boolean = { fg = C.mint, style = O.styles.booleans or {} }, --  a boolean constant: TRUE, false
@@ -28,7 +28,7 @@ function M.get()
 
 		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
 		Structure = { fg = C.white }, --  struct, union, enum, etc.
-		Special = { fg = C.brown }, -- (preferred) any special symbol
+		Special = { fg = C.tiffany }, -- (preferred) any special symbol
 		Type = { fg = C.white, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
