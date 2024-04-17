@@ -1,10 +1,6 @@
 A Neovim colorscheme based on Jonathan Blow's streams.
 
-# Features
-
-- Supports both vim and neovim (Requires [neovim](https://github.com/neovim/neovim/) >= 0.8 or [vim](https://github.com/vim/vim) >= 9 compiled with [lua](https://github.com/lua/lua) >= 5.1)
-- [Compile](https://github.com/naysayer/nvim#Compile) user config for [fastest startuptime](https://www.reddit.com/r/neovim/comments/xxfpt3/naysayernvim_now_startup_in_1ms/)
-- Integrations with lsp, treesitter and [a bunch of plugins](https://github.com/naysayer/nvim#integrations)
+![Preview](./images/preview.png)
 
 # Usage
 
