@@ -42,7 +42,7 @@ function M.get()
 		NormalSB = { fg = C.white, bg = C.darkest_green }, -- normal text in non-current windows
 		NormalFloat = {
 			fg = C.white,
-			bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.darkest_green,
+			bg = (O.transparent_background and vim.o.winblend == 0) and C.none or C.dark_green,
 		}, -- Normal text in floating windows.
 		FloatBorder = { fg = C.brown },
 		FloatTitle = { fg = C.brown }, -- Title of floating windows
