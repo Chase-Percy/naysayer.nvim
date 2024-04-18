@@ -33,6 +33,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
 		["@string.special.symbol"] = { link = "Special" },
 		["@string.special.url"] = { link = "Special" }, -- urls, links and emails
+		["@string.documentation"] = { link = "String" },
 
 		["@character"] = { link = "Character" }, -- character literals
 		["@character.special"] = { link = "SpecialChar" }, -- special characters (e.g. wildcards)
