@@ -17,7 +17,7 @@ function M.get()
 		Directory = { fg = C.blue }, -- directory names (and other special names in listings)
 		EndOfBuffer = { fg = O.show_end_of_buffer and C.dark_green or C.darkest_green }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 		ErrorMsg = { fg = C.red, style = { "bold", "italic" } }, -- error messages on the command line
-		VertSplit = { fg = O.transparent_background and C.dark_green or C.darkest_green }, -- the column separating vertically split windows
+		VertSplit = { fg = O.transparent_background and C.dark_green or C.mint }, -- the column separating vertically split windows
 		Folded = { fg = C.blue, bg = O.transparent_background and C.none or C.dark_green }, -- line used for closed folds
 		FoldColumn = { fg = C.tiffany }, -- 'foldcolumn'
 		SignColumn = { fg = C.dark_green }, -- column where |signs| are displayed
