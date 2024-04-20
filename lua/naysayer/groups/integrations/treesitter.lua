@@ -33,7 +33,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@string.special"] = { link = "Special" }, -- other special strings (e.g. dates)
 		["@string.special.symbol"] = { link = "Special" },
 		["@string.special.url"] = { link = "Special" }, -- urls, links and emails
-		["@string.documentation"] = { link = "String" },
+		["@string.documentation"] = { fg = C.green },
 
 		["@character"] = { link = "Character" }, -- character literals
 		["@character.special"] = { link = "SpecialChar" }, -- special characters (e.g. wildcards)
@@ -85,7 +85,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		-- Punctuation
 		["@punctuation.delimiter"] = { link = "Delimiter" }, -- For delimiters (e.g. `;` / `.` / `,`).
 		["@punctuation.bracket"] = { link = "Delimiter" }, -- For brackets and parenthesis.
-		["@punctuation.special"] = { link = "Special" }, -- For special punctuation that does not fall in the categories before (e.g. `{}` in string interpolation).
+		["@punctuation.special"] = { link = "Delimiter" }, -- For special punctuation that does not fall in the categories before (e.g. `{}` in string interpolation).
 
 		-- Comment
 		["@comment"] = { link = "Comment" },
@@ -111,7 +111,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@markup.link"] = { link = "Tag" }, -- text references, footnotes, citations, etc.
 		["@markup.link.url"] = { fg = C.monokai_yellow, style = { "italic", "underline" } }, -- urls, links and emails
 
-		["@markup.raw"] = { fg = C.monokai_cyan }, -- used for inline code in markdown and for doc in python (""")
+		["@markup.raw"] = { link = "@string.documentation" }, -- used for inline code in markdown and for doc in python (""")
 
 		["@markup.list"] = { link = "Special" },
 		["@markup.list.checked"] = { fg = C.green }, -- todo notes
@@ -161,7 +161,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@label.json"] = { fg = C.blue }, -- For labels: label: in C and :label: in Lua.
 
 		-- lua
-		["@constructor.lua"] = { fg = C.monokai_yellow }, -- For constructor calls and definitions: = { } in Lua.
+		["@constructor.lua"] = { link = "@constructor" }, -- For constructor calls and definitions: = { } in Lua.
 
 		-- typescript
 		["@property.typescript"] = { fg = C.white, style = O.styles.properties or {} },
