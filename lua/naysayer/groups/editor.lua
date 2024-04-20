@@ -5,6 +5,7 @@ function M.get()
 		ColorColumn = { bg = C.darker_green }, -- used for the columns set with 'colorcolumn'
 		Conceal = { fg = C.light_green }, -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor = { fg = C.darkest_green, bg = C.light_green }, -- character under the cursor
+		nCursor = { fg = C.darkest_green, bg = C.light_green }, -- character under the cursor
 		lCursor = { fg = C.darkest_green, bg = C.white }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
 		CursorIM = { fg = C.darkest_green, bg = C.white }, -- like Cursor, but used when in IME mode |CursorIM|
 		CursorColumn = { bg = C.darkest_green }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
