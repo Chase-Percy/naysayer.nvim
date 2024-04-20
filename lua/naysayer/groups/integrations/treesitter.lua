@@ -155,7 +155,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@number.css"] = { fg = C.monokai_orange },
 
 		-- toml
-		["@property.toml"] = { fg = C.blue }, -- Differentiates between string and properties
+		["@property.toml"] = { link = "Type" }, -- Differentiates between string and properties
 
 		-- json
 		["@label.json"] = { fg = C.blue }, -- For labels: label: in C and :label: in Lua.
