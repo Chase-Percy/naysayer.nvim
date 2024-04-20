@@ -28,7 +28,7 @@ function M.get()
 
 		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
 		Structure = { fg = C.white }, --  struct, union, enum, etc.
-		Special = { fg = C.tiffany }, -- (preferred) any special symbol
+		Special = { fg = C.white }, -- (preferred) any special symbol
 		Type = { fg = C.light_green, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
 		SpecialChar = { link = "Special" }, -- special character in a constant
