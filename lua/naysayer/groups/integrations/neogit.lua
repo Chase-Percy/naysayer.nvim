@@ -26,42 +26,42 @@ function M.get()
 			link = "Comment",
 		},
 		NeogitHunkHeader = {
-			bg = U.darken(C.blue, 0.095, C.darkest_green),
-			fg = U.darken(C.blue, 0.5, C.darkest_green),
+			bg = U.darken(C.monokai_blue, 0.095, C.darkest_green),
+			fg = U.darken(C.monokai_blue, 0.5, C.darkest_green),
 		},
 		NeogitHunkHeaderHighlight = {
-			bg = U.darken(C.blue, 0.215, C.darkest_green),
-			fg = C.blue,
+			bg = U.darken(C.monokai_blue, 0.215, C.darkest_green),
+			fg = C.monokai_blue,
 		},
 		NeogitDiffContextHighlight = {
 			bg = C.darker_green,
 		},
 		NeogitDiffDeleteHighlight = {
-			bg = U.darken(C.red, 0.345, C.darkest_green),
-			fg = U.lighten(C.red, 0.850, C.brown),
+			bg = U.darken(C.monokai_red, 0.345, C.darkest_green),
+			fg = U.lighten(C.monokai_red, 0.850, C.brown),
 		},
 		NeogitDiffAddHighlight = {
 			bg = U.darken(C.green, 0.345, C.darkest_green),
 			fg = U.lighten(C.green, 0.850, C.brown),
 		},
 		NeogitDiffDelete = {
-			bg = U.darken(C.red, 0.095, C.darkest_green),
-			fg = U.darken(C.red, 0.800, C.darkest_green),
+			bg = U.darken(C.monokai_red, 0.095, C.darkest_green),
+			fg = U.darken(C.monokai_red, 0.800, C.darkest_green),
 		},
 		NeogitDiffAdd = {
 			bg = U.darken(C.green, 0.095, C.darkest_green),
 			fg = U.darken(C.green, 0.800, C.darkest_green),
 		},
 		NeogitCommitViewHeader = {
-			bg = U.darken(C.blue, 0.300, C.darkest_green),
-			fg = U.lighten(C.blue, 0.800, C.brown),
+			bg = U.darken(C.monokai_blue, 0.300, C.darkest_green),
+			fg = U.lighten(C.monokai_blue, 0.800, C.brown),
 		},
 		NeogitChangeModified = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 			style = { "bold" },
 		},
 		NeogitChangeDeleted = {
-			fg = C.red,
+			fg = C.monokai_red,
 			style = { "bold" },
 		},
 		NeogitChangeAdded = {
@@ -81,7 +81,7 @@ function M.get()
 			style = { "bold" },
 		},
 		NeogitChangeBothModified = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 			style = { "bold" },
 		},
 		NeogitChangeNewFile = {
@@ -121,31 +121,31 @@ function M.get()
 			style = { "bold" },
 		},
 		NeogitNotificationInfo = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 		},
 		NeogitNotificationWarning = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 		},
 		NeogitNotificationError = {
-			fg = C.red,
+			fg = C.monokai_red,
 		},
 		NeogitGraphRed = {
-			fg = C.red,
+			fg = C.monokai_red,
 		},
 		NeogitGraphWhite = {
 			fg = C.darkest_green,
 		},
 		NeogitGraphYellow = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 		},
 		NeogitGraphGreen = {
 			fg = C.green,
 		},
 		NeogitGraphCyan = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 		},
 		NeogitGraphBlue = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 		},
 		NeogitGraphPurple = {
 			fg = C.grey,
@@ -157,7 +157,7 @@ function M.get()
 			fg = C.monokai_orange,
 		},
 		NeogitGraphBoldRed = {
-			fg = C.red,
+			fg = C.monokai_red,
 			style = { "bold" },
 		},
 		NeogitGraphBoldWhite = {
@@ -165,7 +165,7 @@ function M.get()
 			style = { "bold" },
 		},
 		NeogitGraphBoldYellow = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 			style = { "bold" },
 		},
 		NeogitGraphBoldGreen = {
@@ -173,11 +173,11 @@ function M.get()
 			style = { "bold" },
 		},
 		NeogitGraphBoldCyan = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 			style = { "bold" },
 		},
 		NeogitGraphBoldBlue = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 			style = { "bold" },
 		},
 		NeogitGraphBoldPurple = {
@@ -207,12 +207,12 @@ function M.get()
 			fg = C.grey,
 		},
 		NeogitFilePath = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 			style = { "italic" },
 		},
 		NeogitDiffHeader = {
 			bg = C.darkest_green,
-			fg = C.blue,
+			fg = C.monokai_blue,
 			style = { "bold" },
 		},
 		NeogitDiffHeaderHighlight = {
@@ -233,10 +233,10 @@ function M.get()
 			style = { "bold" },
 		},
 		NeogitTagName = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 		},
 		NeogitTagDistance = {
-			fg = C.blue,
+			fg = C.monokai_blue,
 		},
 	}
 end

@@ -37,7 +37,7 @@ return function(flavour)
 	}
 
 	naysayer.inactive = {
-		a = { bg = transparent_bg, fg = C.blue },
+		a = { bg = transparent_bg, fg = C.monokai_blue },
 		b = { bg = transparent_bg, fg = C.dark_green, gui = "bold" },
 		c = { bg = transparent_bg, fg = C.tiffany },
 	}

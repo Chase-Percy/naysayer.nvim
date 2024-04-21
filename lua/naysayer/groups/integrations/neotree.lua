@@ -4,28 +4,28 @@ function M.get()
 	local active_bg = O.transparent_background and C.none or C.darkest_green
 	local inactive_bg = O.transparent_background and C.none or C.darkest_green
 	return {
-		NeoTreeDirectoryName = { fg = C.blue },
-		NeoTreeDirectoryIcon = { fg = C.blue },
+		NeoTreeDirectoryName = { fg = C.monokai_blue },
+		NeoTreeDirectoryIcon = { fg = C.monokai_blue },
 		NeoTreeNormal = { fg = C.brown, bg = active_bg },
 		NeoTreeNormalNC = { fg = C.brown, bg = active_bg },
 		NeoTreeExpander = { fg = C.tiffany },
 		NeoTreeIndentMarker = { fg = C.tiffany },
-		NeoTreeRootName = { fg = C.blue, style = { "bold" } },
+		NeoTreeRootName = { fg = C.monokai_blue, style = { "bold" } },
 		NeoTreeSymbolicLinkTarget = { fg = C.monokai_magenta },
 		NeoTreeModified = { fg = C.monokai_orange },
 
 		NeoTreeGitAdded = { fg = C.green },
-		NeoTreeGitConflict = { fg = C.red },
-		NeoTreeGitDeleted = { fg = C.red },
+		NeoTreeGitConflict = { fg = C.monokai_red },
+		NeoTreeGitDeleted = { fg = C.monokai_red },
 		NeoTreeGitIgnored = { fg = C.tiffany },
-		NeoTreeGitModified = { fg = C.yellow },
-		NeoTreeGitUnstaged = { fg = C.red },
+		NeoTreeGitModified = { fg = C.monokai_yellow },
+		NeoTreeGitUnstaged = { fg = C.monokai_red },
 		NeoTreeGitUntracked = { fg = C.monokai_violet },
 		NeoTreeGitStaged = { fg = C.green },
 
 		NeoTreeFloatBorder = { link = "FloatBorder" },
 		NeoTreeFloatTitle = { link = "FloatTitle" },
-		NeoTreeTitleBar = { fg = C.darkest_green, bg = C.blue },
+		NeoTreeTitleBar = { fg = C.darkest_green, bg = C.monokai_blue },
 
 		NeoTreeFileNameOpened = { fg = C.monokai_magenta },
 		NeoTreeDimText = { fg = C.light_green },

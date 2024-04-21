@@ -102,11 +102,11 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@markup.strikethrough"] = { fg = C.white, style = { "strikethrough" } }, -- strikethrough text
 		["@markup.underline"] = { link = "Underlined" }, -- underlined text
 
-		["@markup.heading"] = { fg = C.blue, style = { "bold" } }, -- titles like: # Example
+		["@markup.heading"] = { fg = C.monokai_blue, style = { "bold" } }, -- titles like: # Example
 
-		["@markup.math"] = { fg = C.blue }, -- math environments (e.g. `$ ... $` in LaTeX)
+		["@markup.math"] = { fg = C.monokai_blue }, -- math environments (e.g. `$ ... $` in LaTeX)
 		["@markup.environment"] = { fg = C.monokai_magenta }, -- text environments of markup languages
-		["@markup.environment.name"] = { fg = C.blue }, -- text indicating the type of an environment
+		["@markup.environment.name"] = { fg = C.monokai_blue }, -- text indicating the type of an environment
 
 		["@markup.link"] = { link = "Tag" }, -- text references, footnotes, citations, etc.
 		["@markup.link.url"] = { fg = C.monokai_yellow, style = { "italic", "underline" } }, -- urls, links and emails
@@ -147,8 +147,8 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- css
 		["@property.css"] = { fg = C.white },
-		["@property.id.css"] = { fg = C.blue },
-		["@property.class.css"] = { fg = C.yellow },
+		["@property.id.css"] = { fg = C.monokai_blue },
+		["@property.class.css"] = { fg = C.monokai_yellow },
 		["@type.css"] = { fg = C.white },
 		["@type.tag.css"] = { fg = C.monokai_violet },
 		["@string.plain.css"] = { fg = C.monokai_orange },
@@ -158,7 +158,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@property.toml"] = { link = "Type" }, -- Differentiates between string and properties
 
 		-- json
-		["@label.json"] = { fg = C.blue }, -- For labels: label: in C and :label: in Lua.
+		["@label.json"] = { fg = C.monokai_blue }, -- For labels: label: in C and :label: in Lua.
 
 		-- lua
 		["@constructor.lua"] = { link = "@constructor" }, -- For constructor calls and definitions: = { } in Lua.
@@ -172,7 +172,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@tag.attribute.tsx"] = { fg = C.monokai_cyan, style = O.styles.miscs or { "italic" } },
 
 		-- yaml
-		["@variable.member.yaml"] = { fg = C.blue }, -- For fields.
+		["@variable.member.yaml"] = { fg = C.monokai_blue }, -- For fields.
 
 		-- Ruby
 		["@string.special.symbol.ruby"] = { fg = C.monokai_yellow },
@@ -182,12 +182,12 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@function.method.call.php"] = { link = "Function" },
 
 		-- C/CPP
-		["@type.builtin.c"] = { fg = C.yellow, style = {} },
+		["@type.builtin.c"] = { fg = C.monokai_yellow, style = {} },
 		["@property.cpp"] = { fg = C.white },
-		["@type.builtin.cpp"] = { fg = C.yellow, style = {} },
+		["@type.builtin.cpp"] = { fg = C.monokai_yellow, style = {} },
 
 		-- gitcommit
-		["@comment.warning.gitcommit"] = { fg = C.yellow },
+		["@comment.warning.gitcommit"] = { fg = C.monokai_yellow },
 
 		-- Misc
 		gitcommitSummary = { fg = C.monokai_yellow, style = O.styles.miscs or { "italic" } },

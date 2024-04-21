@@ -10,7 +10,7 @@ function M.get()
 			bg = O.transparent_background and C.none or C.darker_green,
 			style = { "bold" },
 		},
-		TelescopeMatching = { fg = C.yellow },
+		TelescopeMatching = { fg = C.monokai_yellow },
 	}
 end
 

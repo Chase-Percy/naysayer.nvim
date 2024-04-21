@@ -2,14 +2,14 @@ local M = {}
 
 function M.get()
 	return {
-		LightspeedLabel = { fg = C.red, style = { "bold", "underline" } },
+		LightspeedLabel = { fg = C.monokai_red, style = { "bold", "underline" } },
 		LightspeedLabelDistant = {
-			fg = U.vary_color({ latte = C.blue }, C.monokai_blue),
+			fg = U.vary_color({ latte = C.monokai_blue }, C.monokai_blue),
 			style = { "bold", "underline" },
 		},
 		LightspeedShortcut = {
 			fg = "#ffffff",
-			bg = U.increase_saturation(C.red, 0.7),
+			bg = U.increase_saturation(C.monokai_red, 0.7),
 			style = { "bold" },
 		},
 		LightspeedMaskedChar = {

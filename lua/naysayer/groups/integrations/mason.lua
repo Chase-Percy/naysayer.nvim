@@ -4,8 +4,8 @@ function M.get()
 	local bg = O.transparent_background and C.none or C.grey
 	local fg = O.transparent_background and C.grey or C.darkest_green
 
-	local secondary_bg = O.transparent_background and C.none or C.blue
-	local secondary_fg = O.transparent_background and C.blue or C.darkest_green
+	local secondary_bg = O.transparent_background and C.none or C.monokai_blue
+	local secondary_fg = O.transparent_background and C.monokai_blue or C.darkest_green
 
 	local muted_bg = O.transparent_background and C.none or C.tiffany
 	local muted_fg = O.transparent_background and C.tiffany or C.darkest_green
@@ -27,9 +27,9 @@ function M.get()
 
 		MasonMuted = { fg = C.tiffany },
 		MasonMutedBlock = { bg = muted_bg, fg = muted_fg },
-		MasonMutedBlockBold = { bg = C.yellow, fg = C.darkest_green, bold = true },
+		MasonMutedBlockBold = { bg = C.monokai_yellow, fg = C.darkest_green, bold = true },
 
-		MasonError = { fg = C.red },
+		MasonError = { fg = C.monokai_red },
 
 		MasonHeading = { fg = C.grey, bold = true },
 	}

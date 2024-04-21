@@ -6,10 +6,10 @@ function M.get()
 	return { -- Personally the default integration is already pretty good
 		NoiceCmdline = { fg = C.brown },
 		NoiceCmdlineIcon = { fg = C.monokai_blue, style = virtual_text.information },
-		NoiceCmdlineIconSearch = { fg = C.yellow },
+		NoiceCmdlineIconSearch = { fg = C.monokai_yellow },
 		NoiceCmdlinePopupBorder = { fg = C.grey },
-		NoiceCmdlinePopupBorderSearch = { fg = C.yellow },
-		NoiceConfirmBorder = { fg = C.blue },
+		NoiceCmdlinePopupBorderSearch = { fg = C.monokai_yellow },
+		NoiceConfirmBorder = { fg = C.monokai_blue },
 		NoiceMini = { fg = C.brown, blend = 0 },
 		NoiceFormatProgressDone = {
 			bg = O.transparent_background and C.none or U.darken(C.monokai_blue, 0.30, C.darkest_green),

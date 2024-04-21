@@ -352,7 +352,7 @@ function M.get()
 		enabled = function() return lsp.diagnostics_exist(vim.diagnostic.severity.ERROR) end,
 
 		hl = {
-			fg = C.red,
+			fg = C.monokai_red,
 			bg = sett.bkg,
 		},
 		icon = " " .. assets.lsp.error .. " ",
@@ -362,7 +362,7 @@ function M.get()
 		provider = "diagnostic_warnings",
 		enabled = function() return lsp.diagnostics_exist(vim.diagnostic.severity.WARN) end,
 		hl = {
-			fg = C.yellow,
+			fg = C.monokai_yellow,
 			bg = sett.bkg,
 		},
 		icon = " " .. assets.lsp.warning .. " ",

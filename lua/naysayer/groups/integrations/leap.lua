@@ -10,11 +10,11 @@ function M.get()
 		LeapLabelPrimary = {
 			fg = O.transparent_background and C.green or U.vary_color({ latte = "#222222" }, C.darkest_green),
 			bg = O.transparent_background and C.none
-				or U.vary_color({ latte = U.brighten(C.red, 0.4) }, U.brighten(C.green, 0.3)),
+				or U.vary_color({ latte = U.brighten(C.monokai_red, 0.4) }, U.brighten(C.green, 0.3)),
 			style = { "nocombine", O.transparent_background and "bold" or nil },
 		},
 		LeapLabelSecondary = {
-			fg = O.transparent_background and C.blue or U.vary_color({ latte = "#222222" }, C.darkest_green),
+			fg = O.transparent_background and C.monokai_blue or U.vary_color({ latte = "#222222" }, C.darkest_green),
 			bg = O.transparent_background and C.none
 				or U.vary_color({ latte = U.brighten(C.monokai_blue, 0.3) }, C.monokai_blue),
 			style = { "nocombine", O.transparent_background and "bold" or nil },

@@ -8,8 +8,8 @@ function M.get()
 	if O.transparent_background then
 		return {
 			GitSignsAdd = { fg = C.green }, -- diff mode: Added line |diff.txt|
-			GitSignsChange = { fg = C.yellow }, -- diff mode: Changed line |diff.txt|
-			GitSignsDelete = { fg = C.red }, -- diff mode: Deleted line |diff.txt|
+			GitSignsChange = { fg = C.monokai_yellow }, -- diff mode: Changed line |diff.txt|
+			GitSignsDelete = { fg = C.monokai_red }, -- diff mode: Deleted line |diff.txt|
 
 			GitSignsCurrentLineBlame = { fg = C.dark_green },
 
@@ -17,7 +17,7 @@ function M.get()
 					and { fg = U.darken(C.green, 0.72, C.darkest_green), bg = C.none }
 				or { link = "DiffAdd" },
 			GitSignsDeletePreview = O.transparent_background
-					and { fg = U.darken(C.red, 0.72, C.darkest_green), bg = C.none }
+					and { fg = U.darken(C.monokai_red, 0.72, C.darkest_green), bg = C.none }
 				or { link = "DiffDelete" },
 			-- for word diff in previews
 			GitSignsAddInline = O.transparent_background and {
@@ -26,28 +26,28 @@ function M.get()
 				style = { "bold" },
 			} or { link = "DiffAdd" },
 			GitSignsDeleteInline = O.transparent_background and {
-				fg = C.red,
+				fg = C.monokai_red,
 				bg = C.none,
 				style = { "bold" },
 			} or { link = "DiffDelete" },
 			GitSignsChangeInline = O.transparent_background and {
-				fg = C.yellow,
+				fg = C.monokai_yellow,
 				bg = C.none,
 				style = { "bold" },
 			} or { link = "DiffChange" },
 
-			GitSignsDeleteVirtLn = O.transparent_background and { bg = C.none, fg = C.red } or { link = "DiffDelete" },
+			GitSignsDeleteVirtLn = O.transparent_background and { bg = C.none, fg = C.monokai_red } or { link = "DiffDelete" },
 		}
 	else
 		return {
 			GitSignsAdd = { fg = C.green }, -- diff mode: Added line |diff.txt|
-			GitSignsChange = { fg = C.yellow }, -- diff mode: Changed line |diff.txt|
-			GitSignsDelete = { fg = C.red }, -- diff mode: Deleted line |diff.txt|
+			GitSignsChange = { fg = C.monokai_yellow }, -- diff mode: Changed line |diff.txt|
+			GitSignsDelete = { fg = C.monokai_red }, -- diff mode: Deleted line |diff.txt|
 
 			GitSignsCurrentLineBlame = { fg = C.dark_green },
 
 			GitSignsAddPreview = O.transparent_background and { fg = C.green, bg = C.none } or { link = "DiffAdd" },
-			GitSignsDeletePreview = O.transparent_background and { fg = C.red, bg = C.none } or { link = "DiffDelete" },
+			GitSignsDeletePreview = O.transparent_background and { fg = C.monokai_red, bg = C.none } or { link = "DiffDelete" },
 		}
 	end
 end

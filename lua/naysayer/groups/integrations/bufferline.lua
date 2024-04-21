@@ -36,7 +36,7 @@ function M.get(user_config)
 			tab_separator = { fg = separator_fg, bg = inactive_bg },
 			tab_separator_selected = { fg = separator_fg, bg = active_bg },
 
-			tab_close = { fg = C.red, bg = inactive_bg },
+			tab_close = { fg = C.monokai_red, bg = inactive_bg },
 			indicator_selected = { fg = C.monokai_orange, bg = active_bg, style = styles },
 			-- separators
 			separator = { fg = separator_fg, bg = inactive_bg },
@@ -46,7 +46,7 @@ function M.get(user_config)
 			-- close buttons
 			close_button = { fg = C.dark_green, bg = inactive_bg },
 			close_button_visible = { fg = C.dark_green, bg = inactive_bg },
-			close_button_selected = { fg = C.red, bg = active_bg },
+			close_button_selected = { fg = C.monokai_red, bg = active_bg },
 			-- Empty fill
 			fill = { bg = bg_highlight },
 			-- Numbers
@@ -54,19 +54,19 @@ function M.get(user_config)
 			numbers_visible = { fg = C.brown, bg = inactive_bg },
 			numbers_selected = { fg = C.brown, bg = active_bg, style = styles },
 			-- Errors
-			error = { fg = C.red, bg = inactive_bg },
-			error_visible = { fg = C.red, bg = inactive_bg },
-			error_selected = { fg = C.red, bg = active_bg, style = styles },
-			error_diagnostic = { fg = C.red, bg = inactive_bg },
-			error_diagnostic_visible = { fg = C.red, bg = inactive_bg },
-			error_diagnostic_selected = { fg = C.red, bg = active_bg },
+			error = { fg = C.monokai_red, bg = inactive_bg },
+			error_visible = { fg = C.monokai_red, bg = inactive_bg },
+			error_selected = { fg = C.monokai_red, bg = active_bg, style = styles },
+			error_diagnostic = { fg = C.monokai_red, bg = inactive_bg },
+			error_diagnostic_visible = { fg = C.monokai_red, bg = inactive_bg },
+			error_diagnostic_selected = { fg = C.monokai_red, bg = active_bg },
 			-- Warnings
-			warning = { fg = C.yellow, bg = inactive_bg },
-			warning_visible = { fg = C.yellow, bg = inactive_bg },
-			warning_selected = { fg = C.yellow, bg = active_bg, style = styles },
-			warning_diagnostic = { fg = C.yellow, bg = inactive_bg },
-			warning_diagnostic_visible = { fg = C.yellow, bg = inactive_bg },
-			warning_diagnostic_selected = { fg = C.yellow, bg = active_bg },
+			warning = { fg = C.monokai_yellow, bg = inactive_bg },
+			warning_visible = { fg = C.monokai_yellow, bg = inactive_bg },
+			warning_selected = { fg = C.monokai_yellow, bg = active_bg, style = styles },
+			warning_diagnostic = { fg = C.monokai_yellow, bg = inactive_bg },
+			warning_diagnostic_visible = { fg = C.monokai_yellow, bg = inactive_bg },
+			warning_diagnostic_selected = { fg = C.monokai_yellow, bg = active_bg },
 			-- Infos
 			info = { fg = C.monokai_blue, bg = inactive_bg },
 			info_visible = { fg = C.monokai_blue, bg = inactive_bg },

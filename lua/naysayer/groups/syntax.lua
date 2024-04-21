@@ -26,7 +26,7 @@ function M.get()
 		Macro = { fg = C.light_green }, -- same as Define
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
 
-		StorageClass = { fg = C.yellow }, -- static, register, volatile, etc.
+		StorageClass = { fg = C.monokai_yellow }, -- static, register, volatile, etc.
 		Structure = { fg = C.white }, --  struct, union, enum, etc.
 		Special = { fg = C.white }, -- (preferred) any special symbol
 		Type = { fg = C.light_green, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
@@ -42,7 +42,7 @@ function M.get()
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-		Error = { fg = C.red }, -- (preferred) any erroneous construct
+		Error = { fg = C.monokai_red }, -- (preferred) any erroneous construct
 		Todo = { bg = C.monokai_magenta, fg = C.darkest_green, style = { "bold" } }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 		qfLineNr = { fg = C.brown },
 		qfFileName = { fg = C.brown },
@@ -53,7 +53,7 @@ function M.get()
 		mkdCodeDelimiter = { bg = C.darkest_green, fg = C.brown },
 		mkdCodeStart = { fg = C.monokai_magenta, style = { "bold" } },
 		mkdCodeEnd = { fg = C.monokai_magenta, style = { "bold" } },
-		-- mkdLink = { fg = C.blue, style = { "underline" } },
+		-- mkdLink = { fg = C.monokai_blue, style = { "underline" } },
 
 		-- netrw
 		netrwDir = { fg = C.brown },
@@ -67,38 +67,38 @@ function M.get()
 		illuminatedCurWord = { bg = C.dark_green },
 		-- diff
 		diffAdded = { fg = C.green },
-		diffRemoved = { fg = C.red },
-		diffChanged = { fg = C.blue },
-		diffOldFile = { fg = C.yellow },
+		diffRemoved = { fg = C.monokai_red },
+		diffChanged = { fg = C.monokai_blue },
+		diffOldFile = { fg = C.monokai_yellow },
 		diffNewFile = { fg = C.monokai_orange },
-		diffFile = { fg = C.blue },
+		diffFile = { fg = C.monokai_blue },
 		diffLine = { fg = C.tiffany },
 		diffIndexLine = { fg = C.monokai_cyan },
 		DiffAdd = { bg = U.darken(C.green, 0.18, C.darkest_green) }, -- diff mode: Added line |diff.txt|
-		DiffChange = { bg = U.darken(C.blue, 0.07, C.darkest_green) }, -- diff mode: Changed line |diff.txt|
-		DiffDelete = { bg = U.darken(C.red, 0.18, C.darkest_green) }, -- diff mode: Deleted line |diff.txt|
-		DiffText = { bg = U.darken(C.blue, 0.30, C.darkest_green) }, -- diff mode: Changed text within a changed line |diff.txt|
+		DiffChange = { bg = U.darken(C.monokai_blue, 0.07, C.darkest_green) }, -- diff mode: Changed line |diff.txt|
+		DiffDelete = { bg = U.darken(C.monokai_red, 0.18, C.darkest_green) }, -- diff mode: Deleted line |diff.txt|
+		DiffText = { bg = U.darken(C.monokai_blue, 0.30, C.darkest_green) }, -- diff mode: Changed text within a changed line |diff.txt|
 		-- NeoVim
-		healthError = { fg = C.red },
+		healthError = { fg = C.monokai_red },
 		healthSuccess = { fg = C.monokai_cyan },
-		healthWarning = { fg = C.yellow },
+		healthWarning = { fg = C.monokai_yellow },
 		-- misc
 
 		-- glyphs
-		GlyphPalette1 = { fg = C.red },
+		GlyphPalette1 = { fg = C.monokai_red },
 		GlyphPalette2 = { fg = C.monokai_cyan },
-		GlyphPalette3 = { fg = C.yellow },
-		GlyphPalette4 = { fg = C.blue },
+		GlyphPalette3 = { fg = C.monokai_yellow },
+		GlyphPalette4 = { fg = C.monokai_blue },
 		GlyphPalette6 = { fg = C.monokai_cyan },
 		GlyphPalette7 = { fg = C.brown },
-		GlyphPalette9 = { fg = C.red },
+		GlyphPalette9 = { fg = C.monokai_red },
 
 		-- rainbow
-		rainbow1 = { fg = C.red },
+		rainbow1 = { fg = C.monokai_red },
 		rainbow2 = { fg = C.monokai_orange },
-		rainbow3 = { fg = C.yellow },
+		rainbow3 = { fg = C.monokai_yellow },
 		rainbow4 = { fg = C.green },
-		rainbow5 = { fg = C.blue },
+		rainbow5 = { fg = C.monokai_blue },
 		rainbow6 = { fg = C.grey },
 	}
 end

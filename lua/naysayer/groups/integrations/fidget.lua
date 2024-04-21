@@ -6,7 +6,7 @@ function M.get()
 			bg = O.transparent_background and C.none or C.darkest_green,
 			fg = C.brown,
 		},
-		FidgetTitle = { fg = C.blue },
+		FidgetTitle = { fg = C.monokai_blue },
 	}
 end
 
