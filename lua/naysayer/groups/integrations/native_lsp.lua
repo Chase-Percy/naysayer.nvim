@@ -5,8 +5,8 @@ function M.get()
 	local underlines = O.integrations.native_lsp.underlines
 	local inlay_hints = O.integrations.native_lsp.inlay_hints
 
-	local error = C.red
-	local warning = C.yellow
+	local error = C.monokai_red
+	local warning = C.monokai_yellow
 	local info = C.monokai_blue
 	local hint = C.monokai_cyan
 	local darkening_percentage = 0.095
