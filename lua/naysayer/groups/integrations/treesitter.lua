@@ -132,7 +132,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Language specific:
 		-- bash
-		["@function.builtin.bash"] = { fg = C.red, style = O.styles.miscs or { "italic" } },
+		["@function.builtin.bash"] = { link = "@function.call" },
 
 		-- markdown
 		["@markup.heading.1.markdown"] = { link = "rainbow1" },
