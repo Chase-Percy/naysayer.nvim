@@ -36,7 +36,8 @@ function M.get()
 				style = { "bold" },
 			} or { link = "DiffChange" },
 
-			GitSignsDeleteVirtLn = O.transparent_background and { bg = C.none, fg = C.monokai_red } or { link = "DiffDelete" },
+			GitSignsDeleteVirtLn = O.transparent_background and { bg = C.none, fg = C.monokai_red }
+				or { link = "DiffDelete" },
 		}
 	else
 		return {
@@ -47,7 +48,8 @@ function M.get()
 			GitSignsCurrentLineBlame = { fg = C.dark_green },
 
 			GitSignsAddPreview = O.transparent_background and { fg = C.green, bg = C.none } or { link = "DiffAdd" },
-			GitSignsDeletePreview = O.transparent_background and { fg = C.monokai_red, bg = C.none } or { link = "DiffDelete" },
+			GitSignsDeletePreview = O.transparent_background and { fg = C.monokai_red, bg = C.none }
+				or { link = "DiffDelete" },
 		}
 	end
 end

@@ -132,7 +132,6 @@ local M = {}
 -- 	}
 -- end
 
-
 function M.cursor(name, palette) return {} end
 function M.cursorline(name, palette) return {} end
 

@@ -25,7 +25,7 @@ function M.get()
 		SignColumnSB = { bg = C.darkest_green, fg = C.dark_green }, -- column where |signs| are displayed
 		Substitute = { bg = C.dark_green, fg = U.vary_color({ latte = C.monokai_red }, C.monokai_magenta) }, -- |:substitute| replacement text highlighting
 		-- LineNr = { fg = C.grey }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-		LineNr = {fg = U.blend(C.grey, O.transparent_background and "#000000" or C.darkest_green,  0.40) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+		LineNr = { fg = U.blend(C.grey, O.transparent_background and "#000000" or C.darkest_green, 0.40) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 		CursorLineNr = { fg = C.grey, style = { "bold" } }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line. highlights the number in numberline.
 		MatchParen = { fg = C.monokai_orange, bg = C.dark_green, style = { "bold" } }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 		ModeMsg = { fg = C.white, style = { "bold" } }, -- 'showmode' message (e.g., "-- INSERT -- ")
