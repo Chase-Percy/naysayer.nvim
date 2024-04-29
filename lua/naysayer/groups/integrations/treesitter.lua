@@ -68,7 +68,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		-- Keywords
 		["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
 		["@keyword.function"] = { link = "Keyword" }, -- For keywords used to define a function.
-		["@keyword.operator"] = { link = "Operator" }, -- For new keyword operator
+		["@keyword.operator"] = { link = "Keyword" }, -- For new keyword operator
 		["@keyword.import"] = { link = "Include" }, -- For includes: #include in C, use or extern crate in Rust, or require in Lua.
 		["@keyword.storage"] = { link = "StorageClass" }, -- visibility/life-time/etc. modifiers (e.g. `static`)
 		["@keyword.repeat"] = { link = "Repeat" }, -- For keywords related to loops.
