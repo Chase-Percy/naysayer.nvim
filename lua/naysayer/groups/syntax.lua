@@ -4,7 +4,7 @@ function M.get()
 	return {
 		Comment = { fg = C.green, style = O.styles.comments }, -- just comments
 		SpecialComment = { link = "Special" }, -- special things inside a comment
-		Constant = { fg = C.mint }, -- (preferred) any constant
+		Constant = { fg = C.brown }, -- (preferred) any constant
 		String = { fg = C.tiffany, style = O.styles.strings or {} }, -- a string constant: "this is a string"
 		Character = { fg = C.tiffany }, --  a character constant: 'c', '\n'
 		Number = { fg = C.mint, style = O.styles.numbers or {} }, --   a number constant: 234, 0xff
