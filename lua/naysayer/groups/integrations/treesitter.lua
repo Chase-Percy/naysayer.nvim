@@ -46,7 +46,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 
 		-- Types
 		["@type"] = { link = "Type" }, -- For types.
-		["@type.builtin"] = { fg = C.brown }, -- For builtin types.
+		["@type.builtin"] = { fg = C.light_green }, -- For builtin types.
 		["@type.definition"] = { link = "Type" }, -- type definitions (e.g. `typedef` in C)
 		["@type.qualifier"] = { link = "Keyword" }, -- type qualifiers (e.g. `const`)
 
