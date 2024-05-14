@@ -43,6 +43,7 @@ If you want to stay on nvim 0.7, either disable the integration or pin naysayer 
 		["@number.float"] = { link = "Float" }, -- For floats.
 
 		["@Spell"] = { fg = C.green, style = O.styles.comments },
+		["@conceal"] = { fg = C.brown }
 
 		-- Types
 		["@type"] = { link = "Type" }, -- For types.
