@@ -27,7 +27,6 @@ function M.get()
 		PreCondit = { link = "PreProc" }, -- preprocessor #if, #else, #endif, etc.
 
 		StorageClass = { fg = C.monokai_yellow }, -- static, register, volatile, etc.
-		Structure = { fg = C.white }, --  struct, union, enum, etc.
 		Special = { fg = C.white }, -- (preferred) any special symbol
 		Type = { fg = C.light_green, style = O.styles.types or {} }, -- (preferred) int, long, char, etc.
 		Typedef = { link = "Type" }, --  A typedef
